@@ -70,7 +70,7 @@ main{
 
 #o-evento{
     top: 10pt;
-    left: -5pt;
+    left: -9pt;
     
     border-top-width: 0;
     border-right-width: 0;
@@ -83,17 +83,12 @@ main{
 
 #titulo-o-evento{
     width: 110pt;
-    position: absolute;
-}
-
-#titulo-o-evento:before{
-    content: "O EVENTO";
-    color: #000;
-    z-index: 2;
     position: relative;
+    background: #fff;
+    z-index:2;
 }
 
-#titulo-o-evento:after{
+#titulo-o-evento #complemento-titulo-o-evento{
     color: transparent;
     content: "oi";
     display: block;
@@ -104,17 +99,19 @@ main{
     border-style: solid;
     border-color: #fff;
     
-    left: -2.4em;
-    top: -1.37em;
+    top: calc(-7.5pt - 100%);
+    left: 0;
     
+    border-top-color: transparent;
     border-right-color: #fff;
     border-bottom-color: #fff;
     border-left-color: transparent;
 
-    border-top-width: 0;
     border-right-width: 0;
-    border-bottom-width: 1.65em;
-    border-left-width: 3.4em;
+    border-bottom-width: 39.5px;
+    border-left-width: 60px;
+
+    z-index: 1;
 }
 
 #programacao{
