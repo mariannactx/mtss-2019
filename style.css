@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
 html, body{
     margin: 0;
     height: 100%;
@@ -6,6 +8,14 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
+}
+
+h2{
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 5pt;
 }
 
 header{
@@ -64,7 +74,7 @@ main{
 #titulo-inscricao{
     width: 120pt;
     text-indent: 10pt;
-    padding-right: 40pt;
+    padding-right: 50pt;
 
     position: absolute;
 }
@@ -96,7 +106,7 @@ main{
     border-style: solid;
     border-color: #fff;
     
-    top: calc(-7pt - 100%);
+    top: calc(-9pt - 100%);
     left: 0;
     
     border-top-color: transparent;
@@ -113,15 +123,24 @@ main{
 
 #programacao{
     width: 100%;
-    padding: 10px;
+    padding: 0;
     bottom: 0;
     position: absolute;
-    background: #fff;
+    background: transparent;
     color: #000;
     text-align: center;
 }
 
 #programacao h2{
+    width: auto;
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 5px 20px;
+    background: #fff;
+}
+
+#programacao h2 i{
+    position: relative;
+    top: 1px;
+    margin: 0 -10px 0 5px;
 }
