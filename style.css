@@ -10,7 +10,7 @@ body{
     flex-direction: column;
 }
 
-h2{
+h2, h3{
     font-family: 'Staatliches', cursive;
     font-weight: 400;
     font-style: normal;
@@ -49,12 +49,10 @@ main{
     height: 0;
     border-style: solid;
 
-
     border-top-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
     border-left-width: 0;
-
 }
 
 #titulo-inscricao, #titulo-o-evento{
@@ -80,7 +78,20 @@ main{
     text-indent: 10pt;
     padding-right: 50pt;
 
+    margin-top: -5pt;
+    margin-left: 25pt;
+
     position: absolute;
+}
+
+#titulo-inscricao div,
+#titulo-o-evento div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 #o-evento{
@@ -94,6 +105,10 @@ main{
     width: 110pt;
     position: relative;
     background: #fff;
+
+    margin-top: 0pt;
+    margin-left: 9pt;
+
     padding-left: 0;
     z-index:2;
 }
@@ -109,7 +124,7 @@ main{
     border-style: solid;
     border-color: #fff;
     
-    top: calc(-9pt - 100%);
+    top: calc(-7.5pt - 100%);
     left: 0;
     
     border-top-color: transparent;
@@ -117,9 +132,8 @@ main{
     border-bottom-color: #fff;
     border-left-color: transparent;
 
+    border-top-width: 0;
     border-right-width: 0;
-    border-bottom-width: 39.5px;
-    border-left-width: 60px;
 
     z-index: 1;
 }
@@ -147,3 +161,20 @@ main{
     top: 1px;
     margin: 0 -10px 0 5px;
 }
+
+#content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 20px 20px 20px;
+}
+
+#content > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+

@@ -1,0 +1,29 @@
+@media (max-width: 800px){
+    header #logo{
+        width: 15%;
+        max-width: unset;
+    }
+}
+
+@media (max-width: 600px){
+    header #logo{
+        width: 20%;
+        max-width: unset;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #titulo-inscricao{
+        padding-right: 25pt;
+    }
+
+    #titulo-o-evento{
+        margin-top: 1pt;
+        margin-left: 24pt;
+    }
+
+    #titulo-o-evento #complemento-titulo-o-evento{
+    }
+
+}

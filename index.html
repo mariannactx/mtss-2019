@@ -3,8 +3,10 @@
     <head>
         <title> MTSS 2019 </title>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mobile.css" />
         <script src="script.js"></script>
     </head>
     <body>
@@ -14,10 +16,14 @@
         <main>
             <div id="menu">
                 <div id="inscricao">
-                    <h2 id="titulo-inscricao">INSCRIÇÃO</h2>
+                    <h2 id="titulo-inscricao">INSCRIÇÃO
+                        <div onclick="showSection('inscricao', 'o-evento')"></div>
+                    </h2>
                 </div>
                 <div id="o-evento">
                     <h2 id="titulo-o-evento">O EVENTO
+                        <div onclick="showSection('o-evento', 'inscricao')"></div>
+
                         <span id="complemento-titulo-o-evento"></span> 
                     </h2>
                 </div>
@@ -27,7 +33,16 @@
                         <i class="fas fa-arrow-circle-down"></i>
                     </h2>
                 </div>
+                <div id="content">
+                    <div id="inscricao-content">
+                        <h3>Inscrição</h3>
+                    </div>
+                    <div id="o-evento-content">
+                        <h3>O evento</h3>
+                    </div>
+                </div>
             </div>
+            
         </main>
     </body>
 </html>

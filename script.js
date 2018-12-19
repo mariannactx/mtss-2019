@@ -29,38 +29,48 @@ function sizes(){
     b1 = pageHeight;
     l1 = pageWidth;
 
-    b2 = 39.5;
+    b2 = tituloInscricao.offsetHeight ;
     l2 = (b2 * l1)/b1;
 
     document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = b2 + "px";
-    document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = l2 + "px";
-    document.getElementById("complemento-titulo-o-evento").style.left = (-l2 - 6) + "px"; 
+    document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = l2 - 5 + "px";
+    document.getElementById("complemento-titulo-o-evento").style.left = -l2 + 6 + "px"; 
          
+    // document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = tituloInscricao.offsetHeight + "px";
+    // document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = tituloInscricao.offsetHeight + "px";
+    // document.getElementById("complemento-titulo-o-evento").style.left = - tituloInscricao.offsetHeight + "px"; 
+     
     document.getElementById("menu").style.height = "";
     var menuHeight = document.getElementById("menu").offsetHeight;
     document.getElementById("menu").style.height = menuHeight + "px";
-    
-    tituloInscricao.style.top = "-" + (menuHeight/2 + 55) + "px";
-    tituloSobre.style.top = (menuHeight/2 - 55) + "px";
     
     var menuWidth = document.getElementById("menu").offsetWidth;
     var pontoMedio = menuWidth/2;
     
     var wTituloInscricao = tituloInscricao.offsetWidth;
     
-    var leftTituloInscricao = pontoMedio - (wTituloInscricao - l2);
-    var leftTituloSobre = - pontoMedio + ( (l2/2) + 10 );
+    var leftTituloInscricao = pontoMedio - (wTituloInscricao);
+    var leftTituloSobre = - pontoMedio - (pageWidth < 500 ? 6 : -1);
  
-    tituloInscricao.style.left = leftTituloInscricao + "px";
-    tituloSobre.style.left = leftTituloSobre + "px";
+    tituloInscricao.style.top = "-" + (5 + menuHeight/2) + "px";
+    tituloInscricao.style.left = (leftTituloInscricao)  + "px";
+ 
+    tituloSobre.style.top = (menuHeight/2) + "px";
+    tituloSobre.style.left = leftTituloSobre - 35 + "px";
 
-    inscricao.style.transition = ".5s all";
+    inscricao.style.transition = ".6s all";
     sobre.style.transition = ".5s all";
 }
 
-function showSection(section){
-    inscricao.style.borderTopWidth = 0; 
+function showSection(show, hide){
+
+    document.getElementById(show+"-content").style.display = "block";
+    document.getElementById(hide+"-content").style.display = "none";
+
+    inscricao.style.borderTopWidth = "40px"; 
     sobre.style.borderLeftWidth = "8500px";
+
+    setTimeout(hideSection, 2000);
 }
 
 function hideSection(){
