@@ -17,6 +17,7 @@ h2 {
 h3 {
     font-size: 10pt;
 }
+
 h2, h3{
     font-family: 'Staatliches', cursive;
     font-weight: 400;
@@ -74,7 +75,7 @@ main{
     top: 0;
     left: 50%;
 
-    transition: opacity .5s;
+    transition: opacity .2s;
 }
 
 #inscricao{
@@ -170,8 +171,7 @@ main{
 
 #programacao h2 i{
     position: relative;
-    top: 1px;
-    margin: 0 -10px 0 5px;
+    width: 9pt;
 }
 
 #content{

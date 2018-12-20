@@ -68,10 +68,17 @@ function showSection(show, hide){
     inscricao.style.borderTopWidth = "40px"; 
     sobre.style.borderLeftWidth = "8500px";
 
+    tituloInscricao.style.opacity = 0;
+    tituloSobre.style.opacity = 0;
+
     setTimeout(hideSection, 2000);
 }
 
 function hideSection(){
     inscricao.style.borderTopWidth = pageHeight + "px";
     sobre.style.borderLeftWidth = pageWidth + "px";
+
+
+    tituloInscricao.style.opacity = 1;
+    tituloSobre.style.opacity = 1;
 }
