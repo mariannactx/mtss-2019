@@ -66,7 +66,6 @@ main{
 }
 
 #titulo-inscricao, #titulo-o-evento{
-    height: 12pt;
     padding: 5pt;
     background: #fff;
     display: inline-block;
@@ -129,14 +128,14 @@ main{
     color: transparent;
     content: "oi";
     display: block;
-    position: relative;
+    position: absolute;
     width: 0;
     height: 0;
     
     border-style: solid;
     border-color: #fff;
     
-    top: calc(-7.5pt - 100%);
+    top: .5px;
     left: 0;
     
     border-top-color: transparent;
