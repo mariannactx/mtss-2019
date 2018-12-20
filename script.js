@@ -34,7 +34,7 @@ function sizes(){
     b2 = tituloInscricao.offsetHeight;
     l2 = (b2 * l1)/b1;
 
-    document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = (b2 - 0.1)  + "px";
+    document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = (b2)  + "px";
     document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = (l2 - 5) + "px";
     document.getElementById("complemento-titulo-o-evento").style.left = (-l2 + 5) + "px"; 
          
