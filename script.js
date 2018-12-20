@@ -8,7 +8,7 @@ window.addEventListener("load", function(){
     tituloInscricao = document.getElementById("titulo-inscricao");
     tituloSobre = document.getElementById("titulo-o-evento");
 
-    headerHeight = 32;
+    headerHeight = 53;
     sizes();
 });
 
