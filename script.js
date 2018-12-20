@@ -31,7 +31,7 @@ function sizes(){
 
     b1 = pageHeight;
     l1 = pageWidth;
-    b2 = tituloInscricao.offsetHeight;
+    b2 = tituloSobre.offsetHeight;
     l2 = (b2 * l1)/b1;
 
     document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = (b2)  + "px";

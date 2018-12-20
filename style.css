@@ -135,7 +135,7 @@ main{
     border-style: solid;
     border-color: #fff;
     
-    top: .5px;
+    top: -1px;
     left: 0;
     
     border-top-color: transparent;
