@@ -50,7 +50,7 @@ function sizes(){
     var leftTituloInscricao = pontoMedio - (wTituloInscricao) - 20;
     var leftTituloSobre = - pontoMedio - (pageWidth < 500 ? 40 : 30);
  
-    tituloInscricao.style.top = "-" + (5 + menuHeight/2) + "px";
+    tituloInscricao.style.top = "-" + (menuHeight/2 - 1) + "px";
     tituloInscricao.style.left = (leftTituloInscricao)  + "px";
  
     tituloSobre.style.top = (menuHeight/2) + "px";
