@@ -77,12 +77,12 @@ main{
 }
 
 #titulo-inscricao{
-    width: 85pt;
-    text-indent: 8pt;
-    padding-right: 50pt;
+    width: 150pt;
+    text-indent: 10pt;
+    padding-right: 45pt;
 
-    margin-top: -5pt;
-    margin-left: 25pt;
+    margin-top: -10pt;
+    margin-left: 35pt;
 
     position: absolute;
 }
@@ -105,7 +105,7 @@ main{
 }
 
 #titulo-o-evento{
-    width: 115pt;
+    width: 150pt;
     position: relative;
     background: #fff;
 
