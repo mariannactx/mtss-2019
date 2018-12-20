@@ -10,32 +10,32 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <header>
+        <header id="header">
             <img id="logo" src="assets/logo-round.png"/>
         </header>
         <main>
             <div id="menu">
                 <div id="inscricao">
-                    <h2 id="titulo-inscricao">INSCRIÇÃO
-                        <div onclick="showSection('inscricao', 'o-evento')"></div>
+                    <h2 id="titulo-inscricao">O EVENTO
+                        <div onclick="showSection('o-evento', 'programacao')"></div>
                     </h2>
                 </div>
                 <div id="o-evento">
-                    <h2 id="titulo-o-evento">O EVENTO
-                        <div onclick="showSection('o-evento', 'inscricao')"></div>
+                    <h2 id="titulo-o-evento">PROGRAMAÇÃO
+                        <div onclick="showSection('programacao', 'o-evento')"></div>
 
                         <span id="complemento-titulo-o-evento"></span> 
                     </h2>
                 </div>
                 <div id="programacao">
                     <h2>
-                        PROGRAMAÇÃO
-                        <i class="fas fa-arrow-circle-down"></i>
+                        INSCREVA-SE
+                        <i class="fas fa-clipboard-list"></i>
                     </h2>
                 </div>
                 <div id="content">
-                    <div id="inscricao-content">
-                        <h3>Inscrição</h3>
+                    <div id="programacao-content">
+                        <h3>Programação</h3>
                     </div>
                     <div id="o-evento-content">
                         <h3>O evento</h3>

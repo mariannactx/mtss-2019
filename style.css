@@ -10,6 +10,13 @@ body{
     flex-direction: column;
 }
 
+h2 {
+    font-size: 12pt;
+}
+
+h3 {
+    font-size: 10pt;
+}
 h2, h3{
     font-family: 'Staatliches', cursive;
     font-weight: 400;
@@ -20,17 +27,19 @@ h2, h3{
 
 header{
     width: 100%;
-    height: 50pt;
+    height: 24pt;
     background: #fff;
     text-align: center;
+    transition: height .5s;
 }
 
 header #logo{
     max-width: 10%;
-    margin: 10px auto;
+    margin: 3pt auto;
     display: inline-block;
     position: relative;
     z-index: 3;
+    transition: all .5s;
 }
 
 main{
@@ -56,7 +65,7 @@ main{
 }
 
 #titulo-inscricao, #titulo-o-evento{
-    height: 20pt;
+    height: 12pt;
     padding: 5pt;
     background: #fff;
     display: inline-block;
@@ -64,6 +73,8 @@ main{
     
     top: 0;
     left: 50%;
+
+    transition: opacity .5s;
 }
 
 #inscricao{
@@ -74,8 +85,8 @@ main{
 }
 
 #titulo-inscricao{
-    width: 120pt;
-    text-indent: 10pt;
+    width: 85pt;
+    text-indent: 8pt;
     padding-right: 50pt;
 
     margin-top: -5pt;
@@ -102,12 +113,12 @@ main{
 }
 
 #titulo-o-evento{
-    width: 110pt;
+    width: 115pt;
     position: relative;
     background: #fff;
 
     margin-top: 0pt;
-    margin-left: 9pt;
+    margin-left: 10pt;
 
     padding-left: 0;
     z-index:2;
@@ -154,6 +165,7 @@ main{
     margin: 0;
     padding: 5px 20px;
     background: #fff;
+    box-shadow: -2px -2px 2px 0px rgba(0,0,0,0.2);
 }
 
 #programacao h2 i{

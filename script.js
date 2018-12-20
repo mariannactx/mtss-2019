@@ -1,4 +1,6 @@
 var inscricao, sobre, tituloInscricao, tituloSobre;
+var pageWidth, pageHeight, headerHeight;
+
 window.addEventListener("load", function(){
     inscricao = document.getElementById("inscricao");
     sobre = document.getElementById("o-evento");
@@ -6,6 +8,7 @@ window.addEventListener("load", function(){
     tituloInscricao = document.getElementById("titulo-inscricao");
     tituloSobre = document.getElementById("titulo-o-evento");
 
+    headerHeight = 32;
     sizes();
 });
 
@@ -15,8 +18,8 @@ function sizes(){
     inscricao.style.transition = "";
     sobre.style.transition = "";
 
-    var pageWidth = window.innerWidth;
-    var pageHeight = window.innerHeight - 66;
+    pageWidth = window.innerWidth + 1;
+    pageHeight = window.innerHeight - headerHeight;
 
     inscricao.style.borderTopWidth = pageHeight + "px";
     inscricao.style.borderRightWidth = pageWidth + "px";
@@ -28,18 +31,13 @@ function sizes(){
 
     b1 = pageHeight;
     l1 = pageWidth;
-
-    b2 = tituloInscricao.offsetHeight ;
+    b2 = tituloInscricao.offsetHeight;
     l2 = (b2 * l1)/b1;
 
-    document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = b2 + "px";
-    document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = l2 - 5 + "px";
-    document.getElementById("complemento-titulo-o-evento").style.left = -l2 + 6 + "px"; 
+    document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = (b2 - 0.1)  + "px";
+    document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = (l2 - 5) + "px";
+    document.getElementById("complemento-titulo-o-evento").style.left = (-l2 + 5) + "px"; 
          
-    // document.getElementById("complemento-titulo-o-evento").style.borderBottomWidth = tituloInscricao.offsetHeight + "px";
-    // document.getElementById("complemento-titulo-o-evento").style.borderLeftWidth = tituloInscricao.offsetHeight + "px";
-    // document.getElementById("complemento-titulo-o-evento").style.left = - tituloInscricao.offsetHeight + "px"; 
-     
     document.getElementById("menu").style.height = "";
     var menuHeight = document.getElementById("menu").offsetHeight;
     document.getElementById("menu").style.height = menuHeight + "px";
@@ -49,14 +47,14 @@ function sizes(){
     
     var wTituloInscricao = tituloInscricao.offsetWidth;
     
-    var leftTituloInscricao = pontoMedio - (wTituloInscricao);
-    var leftTituloSobre = - pontoMedio - (pageWidth < 500 ? 6 : -1);
+    var leftTituloInscricao = pontoMedio - (wTituloInscricao) - 20;
+    var leftTituloSobre = - pontoMedio - (pageWidth < 500 ? 40 : 30);
  
     tituloInscricao.style.top = "-" + (5 + menuHeight/2) + "px";
     tituloInscricao.style.left = (leftTituloInscricao)  + "px";
  
     tituloSobre.style.top = (menuHeight/2) + "px";
-    tituloSobre.style.left = leftTituloSobre - 35 + "px";
+    tituloSobre.style.left = leftTituloSobre + "px";
 
     inscricao.style.transition = ".6s all";
     sobre.style.transition = ".5s all";
@@ -74,9 +72,6 @@ function showSection(show, hide){
 }
 
 function hideSection(){
-    var pageWidth = window.innerWidth;
-    var pageHeight = window.innerHeight - 66;
-
     inscricao.style.borderTopWidth = pageHeight + "px";
     sobre.style.borderLeftWidth = pageWidth + "px";
 }
