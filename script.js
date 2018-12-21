@@ -36,8 +36,9 @@ function sizes(){
     var menuWidth = menu.offsetWidth;
     var pontoMedio = menuWidth/2;
     
-    tituloEsquerda.style.top = "-" + (menuHeight/2 - 1) + "px";
-    tituloEsquerda.style.left = (pontoMedio - tituloEsquerda.offsetWidth)  + "px";
+    widthTitEsq = tituloEsquerda.offsetWidth;
+    tituloEsquerda.style.top = "-" + (menuHeight/2 + 10) + "px";
+    tituloEsquerda.style.left = (pontoMedio - widthTitEsq + 24)  + "px";
  
     tituloDireita.style.top = (menuHeight/2) + "px";
     tituloDireita.style.left = - (pontoMedio + 3) + "px";
@@ -60,8 +61,8 @@ function sizes(){
 
 function showSection(show, hide){
 
-    document.getElementById(show+"-content").style.display = "block";
-    document.getElementById(hide+"-content").style.display = "none";
+    document.getElementById("content-" + show).style.display = "block";
+    document.getElementById("content-" + hide).style.display = "none";
 
     secaoEsquerda.style.borderTopWidth = "40px"; 
     secaoDireita.style.borderLeftWidth = "8500px";
