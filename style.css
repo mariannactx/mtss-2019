@@ -46,7 +46,7 @@ main{
     position: relative;
 }
 
-#inscricao, #o-evento{
+#secao-esquerda, #secao-direita{
     width: 0;
     height: 0;
     border-style: solid;
@@ -57,7 +57,31 @@ main{
     border-left-width: 0;
 }
 
-#titulo-inscricao, #titulo-o-evento{
+#secao-esquerda{
+    border-top-color: #000;
+    border-right-color: #fff;
+    position: relative;
+    top: -5pt;
+}
+
+#secao-direita{
+    bottom: 0;
+    border-bottom-color: #000;
+    border-left-color: transparent;
+    position: absolute;
+}
+
+#secao-esquerda div,
+#secao-direita div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#titulo-esquerda, #titulo-direita{
     padding: 5pt;
     background: #fff;
     display: inline-block;
@@ -69,54 +93,28 @@ main{
     transition: opacity .2s;
 }
 
-#inscricao{
-    border-top-color: #000;
-    border-right-color: #fff;
-    position: relative;
-    top: -5px;
-}
-
-#titulo-inscricao{
+#titulo-esquerda{
     width: 150pt;
+    position: relative;
+
     text-indent: 10pt;
+
+    margin: 0;
     padding-right: 45pt;
 
-    margin-top: -10pt;
-    margin-left: 35pt;
-
-    position: absolute;
+    text-align: right;
 }
 
-#titulo-inscricao div,
-#titulo-o-evento div{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-#o-evento{
-    bottom: 0;
-    border-bottom-color: #000;
-    border-left-color: transparent;
-    position: absolute;
-}
-
-#titulo-o-evento{
+#titulo-direita{
     width: 150pt;
     position: relative;
-    background: #fff;
-
-    margin-top: 0pt;
-    margin-left: 10pt;
-
-    padding-left: 0;
     z-index:2;
+
+    margin: 0;
+    padding-left: 0;
 }
 
-#titulo-o-evento #complemento-titulo-o-evento{
+#secao-direita #complemento{
     color: transparent;
     content: "oi";
     display: block;
@@ -125,13 +123,11 @@ main{
     height: 0;
     
     border-style: solid;
-    border-color: #fff;
     
     top: 0;
     left: 0;
     
     border-top-color: transparent;
-    border-right-color: #fff;
     border-bottom-color: #fff;
     border-left-color: transparent;
 
@@ -141,7 +137,7 @@ main{
     z-index: 1;
 }
 
-#programacao{
+#titulo-centro{
     width: 100%;
     padding: 0;
     bottom: 0;
@@ -151,7 +147,7 @@ main{
     text-align: center;
 }
 
-#programacao h2{
+#titulo-centro h2{
     width: auto;
     display: inline-block;
     margin: 0;
@@ -160,7 +156,7 @@ main{
     box-shadow: -2px -2px 2px 0px rgba(0,0,0,0.2);
 }
 
-#programacao h2 i{
+#titulo-centro h2 i{
     position: relative;
     width: 9pt;
 }
@@ -180,4 +176,3 @@ main{
     height: 100%;
     display:none;
 }
-

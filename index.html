@@ -15,24 +15,27 @@
         </header>
         <main>
             <div id="menu">
-                <div id="inscricao">
-                    <h2 id="titulo-inscricao">INFORMAÇÕES
-                        <div onclick="showSection('o-evento', 'programacao')"></div>
+                <div id="secao-esquerda">
+                    <h2 id="titulo-esquerda">INFORMAÇÕES
+                        <div onclick="showSection('esquerda', 'direita')"></div>
                     </h2>
                 </div>
-                <div id="o-evento">
-                    <h2 id="titulo-o-evento"><span id="complemento-titulo-o-evento"></span> PROGRAMAÇÃO <div onclick="showSection('programacao', 'o-evento')"></div>
+                <div id="secao-direita">
+                    <h2 id="titulo-direita">
+                        <span id="complemento"></span>
+                        PROGRAMAÇÃO
+                        <div onclick="showSection('direita', 'esquerda')"></div>
                     </h2>
                 </div>
-                <div id="programacao">
+                <div id="titulo-centro">
                     <h2>INSCREVA-SE <i class="fas fa-clipboard-list"></i></h2>
                 </div>
                 <div id="content">
-                    <div id="programacao-content">
-                        <h3>Programação</h3>
+                    <div id="content-esquerda">
+                        <h3>Informações</h3>
                     </div>
-                    <div id="o-evento-content">
-                        <h3>O evento</h3>
+                    <div id="content-direita">
+                        <h3>Programação</h3>
                     </div>
                 </div>
             </div>

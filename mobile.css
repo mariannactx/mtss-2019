@@ -12,18 +12,14 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px){
 
-    #titulo-inscricao{
-        padding-right: 25pt;
+    #titulo-esquerda,
+    #titulo-direita{
+        font-size: 14pt;
     }
 
-    #titulo-o-evento{
-        margin-top: 1pt;
-        margin-left: 24pt;
-        text-indent: 6pt;
+    #titulo-esquerda{
         padding-right: 10pt;
     }
-
-
 }
