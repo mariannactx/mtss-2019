@@ -33,27 +33,32 @@ function sizes(){
     var menuHeight = menu.offsetHeight;
     menu.style.height = menuHeight + "px";
     
-    var menuWidth = menu.offsetWidth;
-    var pontoMedio = menuWidth/2;
+    var b1 = pageHeight;
+    var l1 = pageWidth;
     
-    widthTitEsq = tituloEsquerda.offsetWidth;
-    tituloEsquerda.style.top = "-" + (menuHeight/2 + 10) + "px";
-    tituloEsquerda.style.left = (pontoMedio - widthTitEsq + 24)  + "px";
- 
-    tituloDireita.style.top = (menuHeight/2) + "px";
-    tituloDireita.style.left = - (pontoMedio + 3) + "px";
-
-    var b1, l1, b2, l2;
-
-    b1 = pageHeight;
-    l1 = pageWidth;
-    b2 = tituloDireita.offsetHeight;
-    l2 = (b2 * l1)/b1;
+    var b2 = tituloEsquerda.children[0].offsetHeight;
+    var l2 = (b2 * l1)/b1;
     
-    document.getElementById("complemento").style.borderBottomWidth = (b2 - 0.2) + "px";
-    document.getElementById("complemento").style.borderLeftWidth = l2 + "px";
-    document.getElementById("complemento").style.left = -l2 + "px"; 
+    var pontoMedioX = pageWidth/2;
+    var pontoMedioY = pageHeight/2;
 
+    diffTitEsquerda = tituloEsquerda.offsetWidth - l2/2;
+
+    tituloEsquerda.style.height = b2 + "px";
+    tituloEsquerda.style.paddingRight = l2 + "px";
+    tituloEsquerda.style.top  = - (pontoMedioY + b2/3) + "px";
+    tituloEsquerda.style.left = + ( (pontoMedioX - l2 - 3) - (diffTitEsquerda) ) + "px";
+
+    tituloEsquerda.children[1].style.borderBottomWidth = (b2) + "px";
+    tituloEsquerda.children[1].style.borderLeftWidth = l2 + "px";
+    
+    tituloDireita.style.height = b2 + "px";
+    tituloDireita.style.paddingLeft = l2 + "px"; 
+    tituloDireita.style.top  = + (pontoMedioY) + "px";
+    tituloDireita.style.left = - (pontoMedioX + l2 + 3) + "px";
+
+    tituloDireita.children[0].style.borderBottomWidth = b2 + "px";
+    tituloDireita.children[0].style.borderLeftWidth = l2 + "px";
 
     secaoEsquerda.style.transition = ".6s all";
     secaoDireita.style.transition = ".5s all";

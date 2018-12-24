@@ -82,59 +82,63 @@ main{
 }
 
 #titulo-esquerda, #titulo-direita{
-    padding: 5pt;
-    background: #fff;
+    width: 150pt;
     display: inline-block;
     white-space: nowrap;
     
+    margin: 0;
+    
     top: 0;
     left: 50%;
+    
+    position: relative;
 
     transition: opacity .2s;
 }
 
 #titulo-esquerda{
-    width: 150pt;
-    position: relative;
-
-    text-indent: 10pt;
-
-    margin: 0;
-    padding-right: 45pt;
-
     text-align: right;
 }
 
 #titulo-direita{
-    width: 150pt;
-    position: relative;
     z-index:2;
-
-    margin: 0;
-    padding-left: 0;
 }
 
-#secao-direita #complemento{
+.texto{
+    padding: 6px 0;
+    background: #fff;
+    display: inline-block;
+}
+
+.complemento{
     color: transparent;
     content: "oi";
     display: block;
-    position: absolute;
+    
     width: 0;
     height: 0;
+    top: 0;
     
     border-style: solid;
+    border-width: 0;
+    border-color: transparent;
     
-    top: 0;
-    left: 0;
-    
-    border-top-color: transparent;
-    border-bottom-color: #fff;
-    border-left-color: transparent;
-
-    border-top-width: 0;
-    border-right-width: 0;
-
+    position: absolute;
     z-index: 1;
+}
+
+#titulo-esquerda .complemento{
+    border-left-color: #fff;
+    right: 0;
+}
+
+#titulo-esquerda .texto{
+    text-indent: 10px;
+}
+
+#titulo-direita .complemento{
+    border-bottom-color: #fff;
+    left: 0;
 }
 
 #titulo-centro{
