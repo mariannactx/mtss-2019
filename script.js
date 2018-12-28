@@ -32,33 +32,32 @@ function sizes(){
     menu.style.height = "";
     var menuHeight = menu.offsetHeight;
     menu.style.height = menuHeight + "px";
-    
+        
     var b1 = pageHeight;
     var l1 = pageWidth;
-    
-    var b2 = tituloEsquerda.children[0].offsetHeight;
+    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
+    var b3 = tituloDireita.children[1].offsetHeight;
     var l2 = (b2 * l1)/b1;
-    
+    var l3 = (b3 * l1)/b1;
+
     var pontoMedioX = pageWidth/2;
     var pontoMedioY = pageHeight/2;
 
-    diffTitEsquerda = tituloEsquerda.offsetWidth - l2/2;
-
-    tituloEsquerda.style.height = b2 + "px";
-    tituloEsquerda.style.paddingRight = l2 + "px";
-    tituloEsquerda.style.top  = - (pontoMedioY + b2/3) + "px";
-    tituloEsquerda.style.left = + ( (pontoMedioX - l2 - 3) - (diffTitEsquerda) ) + "px";
-
-    tituloEsquerda.children[1].style.borderBottomWidth = (b2) + "px";
-    tituloEsquerda.children[1].style.borderLeftWidth = l2 + "px";
+    tituloEsquerda.style.height = b3 + "px";
+    tituloEsquerda.style.paddingRight = l3 + "px";
+    tituloEsquerda.style.top  = - (pontoMedioY + b2 - 2) + "px";
+    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
     
-    tituloDireita.style.height = b2 + "px";
-    tituloDireita.style.paddingLeft = l2 + "px"; 
+    tituloEsquerda.children[1].style.borderBottomWidth = b3 + "px";
+    tituloEsquerda.children[1].style.borderLeftWidth = l3 + "px";
+    
+    tituloDireita.style.height = b3 + "px";
+    tituloDireita.style.paddingLeft = l3 + "px"; 
     tituloDireita.style.top  = + (pontoMedioY) + "px";
-    tituloDireita.style.left = - (pontoMedioX + l2 + 3) + "px";
+    tituloDireita.style.left = - (pontoMedioX + l3 + 3)  + "px";
 
-    tituloDireita.children[0].style.borderBottomWidth = b2 + "px";
-    tituloDireita.children[0].style.borderLeftWidth = l2 + "px";
+    tituloDireita.children[0].style.borderBottomWidth = b3 + "px";
+    tituloDireita.children[0].style.borderLeftWidth = l3 + "px";
 
     secaoEsquerda.style.transition = ".6s all";
     secaoDireita.style.transition = ".5s all";

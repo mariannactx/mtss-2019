@@ -61,14 +61,14 @@ main{
     border-top-color: #000;
     border-right-color: #fff;
     position: relative;
-    top: -5pt;
+    top: -2.5px;
 }
 
 #secao-direita{
-    bottom: 0;
     border-bottom-color: #000;
     border-left-color: transparent;
     position: absolute;
+    bottom: -2.5px;
 }
 
 #secao-esquerda div,
@@ -82,26 +82,11 @@ main{
 }
 
 #titulo-esquerda, #titulo-direita{
-    width: 150pt;
     display: inline-block;
     white-space: nowrap;
-    
     margin: 0;
-    
-    top: 0;
-    left: 50%;
-    
     position: relative;
-
     transition: opacity .2s;
-}
-
-#titulo-esquerda{
-    text-align: right;
-}
-
-#titulo-direita{
-    z-index:2;
 }
 
 .texto{
@@ -110,19 +95,30 @@ main{
     display: inline-block;
 }
 
+
+#titulo-esquerda .texto,
+#titulo-direita .texto{
+    text-indent: 10px;
+}
+
+#titulo-esquerda .texto{
+    text-align: right;
+}
+
+#titulo-direita .texto{
+    padding-right: 5px;
+}
+
 .complemento{
-    color: transparent;
-    content: "oi";
-    display: block;
-    
     width: 0;
     height: 0;
-    top: 0;
-    
+    content: "oi";
+    color: transparent;
+    display: block;
     border-style: solid;
     border-width: 0;
     border-color: transparent;
-    
+    top: 0;
     position: absolute;
     z-index: 1;
 }
@@ -130,10 +126,6 @@ main{
 #titulo-esquerda .complemento{
     border-left-color: #fff;
     right: 0;
-}
-
-#titulo-esquerda .texto{
-    text-indent: 10px;
 }
 
 #titulo-direita .complemento{
