@@ -24,6 +24,7 @@ header{
     background: #fff;
     text-align: center;
     transition: height .5s;
+    border-bottom: 1px solid #000;
 }
 
 header #logo{
@@ -31,7 +32,7 @@ header #logo{
     margin: 3pt auto;
     display: inline-block;
     position: relative;
-    z-index: 3;
+    z-index: 4;
     transition: all .5s;
 }
 
@@ -44,9 +45,12 @@ main{
     width: 100%;
     overflow: hidden;
     position: relative;
+    z-index: 3;
+    background: transparent;
+    transition: .6s background;
 }
 
-#secao-esquerda, #secao-direita{
+#menu-esquerda, #menu-direita{
     width: 0;
     height: 0;
     border-style: solid;
@@ -57,22 +61,22 @@ main{
     border-left-width: 0;
 }
 
-#secao-esquerda{
+#menu-esquerda{
     border-top-color: #000;
-    border-right-color: #fff;
+    border-right-color: transparent;
     position: relative;
     top: -2.5px;
 }
 
-#secao-direita{
+#menu-direita{
     border-bottom-color: #000;
     border-left-color: transparent;
     position: absolute;
     bottom: -2.5px;
 }
 
-#secao-esquerda div,
-#secao-direita div{
+#menu-esquerda div,
+#menu-direita div{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -86,6 +90,7 @@ main{
     white-space: nowrap;
     margin: 0;
     position: relative;
+    z-index: 3;
     transition: opacity .2s;
 }
 
@@ -95,10 +100,10 @@ main{
     display: inline-block;
 }
 
-
 #titulo-esquerda .texto,
 #titulo-direita .texto{
     text-indent: 10px;
+    background: #fff;
 }
 
 #titulo-esquerda .texto{
@@ -141,6 +146,7 @@ main{
     background: transparent;
     color: #000;
     text-align: center;
+    border-top: 1px solid #000;
 }
 
 #titulo-centro h2{
@@ -148,8 +154,9 @@ main{
     display: inline-block;
     margin: 0;
     padding: 5px 20px;
-    background: #fff;
-    box-shadow: -2px -2px 2px 0px rgba(0,0,0,0.2);
+    background: #fff;    
+    position: relative;
+    z-index: 3;
 }
 
 #titulo-centro h2 i{
@@ -160,15 +167,47 @@ main{
 #content{
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: calc(100% - 40pt);
+    top: 40pt;
     left: 0;
-    padding: 30px 20px 20px 20px;
 }
 
 #content > div{
-    position: absolute;
     width: 100%;
     height: 100%;
+    left:0;
+    top:0;
     display:none;
+}
+
+.content{
+    height: 100%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.content-titulo{
+    height: 20pt;
+    padding: 25pt 0 10px 0; 
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.content-titulo span i{
+    letter-spacing: 0;
+}
+
+.content-texto{
+    width: 100%;
+    height: calc(100% - 20pt - 20px - 60pt);
+    overflow-y: auto;
+    margin: 0;
+    text-indent: 10pt;
+}
+
+.content-texto p{
+    margin-bottom:0;
 }
