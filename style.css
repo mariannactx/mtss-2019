@@ -172,6 +172,10 @@ main{
     cursor: pointer;
 }
 
+.content-titulo span i:before{
+    font-size: 20pt;
+}
+
 #content{
     position: absolute;
     width: 100%;
