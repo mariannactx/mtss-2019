@@ -164,6 +164,14 @@ main{
     width: 9pt;
 }
 
+#titulo-esquerda,
+#titulo-direita,
+#titulo-centro,
+.content-titulo span i
+{
+    cursor: pointer;
+}
+
 #content{
     position: absolute;
     width: 100%;
