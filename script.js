@@ -1,5 +1,5 @@
 var menuEsquerda, menuDireita, tituloEsquerda, tituloDireita;
-var pageWidth, pageHeight, headerHeight, b1, l1, b2, l2, b3, l3;
+var pageWidth, pageHeight, headerHeight, pontoMedioX, pontoMedioY;
 
 window.addEventListener("load", function(){
     
@@ -17,8 +17,9 @@ window.addEventListener("load", function(){
 window.addEventListener("resize", sizes);
 
 function sizes(){
-    menuEsquerda.style.transition = "";
-    menuDireita.style.transition = "";
+    menuEsquerda.style.transition   = "";
+    tituloEsquerda.style.transition = "";
+    menuDireita.style.transition    = "";
 
     pageWidth = window.innerWidth + 1;
     pageHeight = window.innerHeight - 1 - headerHeight;
@@ -38,15 +39,15 @@ function sizes(){
     menu.style.height = menuHeight + "px";
     content.style.height = menuHeight + "px";
 
-    b1 = pageHeight;
-    l1 = pageWidth;
-    b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
-    b3 = tituloDireita.children[1].offsetHeight;
-    l2 = (b2 * l1)/b1;
-    l3 = (b3 * l1)/b1;
+    var b1 = pageHeight;
+    var l1 = pageWidth;
+    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
+    var b3 = tituloDireita.children[1].offsetHeight;
+    var l2 = (b2 * l1)/b1;
+    var l3 = (b3 * l1)/b1;
 
-    var pontoMedioX = pageWidth/2;
-    var pontoMedioY = pageHeight/2;
+    pontoMedioX = pageWidth/2;
+    pontoMedioY = pageHeight/2;
 
     tituloEsquerda.style.height = b3 + "px";
     tituloEsquerda.style.paddingRight = l3 + "px";
@@ -64,8 +65,9 @@ function sizes(){
     tituloDireita.children[0].style.borderBottomWidth = b3 + "px";
     tituloDireita.children[0].style.borderLeftWidth = l3 + "px";
 
-    menuEsquerda.style.transition = ".6s all";
-    menuDireita.style.transition = ".5s all";
+    menuEsquerda.style.transition   = ".6s all";
+    tituloEsquerda.style.transition = ".6s all";
+    menuDireita.style.transition    = ".5s all";
 }
 
 function showSection(show, hide){
@@ -74,9 +76,17 @@ function showSection(show, hide){
     
     document.getElementById("content-" + show).style.display = "block";
     document.getElementById("content-" + hide).style.display = "none";
+
+    var b1 = 0;
+    var l1 = pageWidth*5;
+    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
+    var l2 = (b2 * l1)/b1;
     
-    menuEsquerda.style.borderTopWidth = "0px"; 
-    menuDireita.style.borderLeftWidth = pageWidth*5 + "px";
+    menuEsquerda.style.borderTopWidth = b1 + "px"; 
+    tituloEsquerda.style.top  = "0px";
+    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
+    
+    menuDireita.style.borderLeftWidth = l1 + "px";
     
     menuEsquerda.style.opacity  = 0;
     menuDireita.style.opacity   = 0
@@ -89,7 +99,16 @@ function showSection(show, hide){
 function hideSection(){
     menu.style.visibility = "visible";
     menu.style.background = "#fff"; 
-    menuEsquerda.style.borderTopWidth = pageHeight + "px";
+    
+    var b1 = pageHeight;
+    var l1 = pageWidth;
+    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
+    var l2 = (b2 * l1)/b1;
+    
+    menuEsquerda.style.borderTopWidth = b1 + "px";
+    tituloEsquerda.style.top  = - (pontoMedioY + b2 - 2) + "px";
+    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
+    
     menuDireita.style.borderLeftWidth = pageWidth + "px";
 
     menuEsquerda.style.opacity  = 1;
