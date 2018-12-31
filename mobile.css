@@ -15,4 +15,13 @@
         font-size: 14pt;
     }
 
+    #localizacao, #sobre{
+        width: 100%;
+        float:none;
+    }
+
+    #sobre {
+        padding: 0;
+        margin-bottom: 1em;
+    }
 }

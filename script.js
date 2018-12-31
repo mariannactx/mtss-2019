@@ -74,9 +74,9 @@ function showSection(show, hide){
     
     menu.style.background = "transparent"; 
     
-    document.getElementById("content-" + show).style.display = "block";
-    document.getElementById("content-" + hide).style.display = "none";
-
+    document.getElementById("content-" + show).style.visibility = "visible";
+    document.getElementById("content-" + hide).style.visibility = "hidden";
+    
     var b1 = 0;
     var l1 = pageWidth*5;
     var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
