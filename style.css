@@ -68,8 +68,17 @@ main{
     overflow: hidden;
     position: relative;
     z-index: 3;
-    background: transparent;
-    transition: .6s background;
+    background: #fff;
+    transition: 2s background;
+}
+
+.menu-item{
+    position: relative;
+    display: inline;
+    margin: 10px;
+    top: 10px;
+    padding: 10px;
+    font-family: medium-content-sans-serif-font;
 }
 
 #menu-esquerda, #menu-direita{
@@ -84,14 +93,14 @@ main{
 }
 
 #menu-esquerda{
-    border-top-color: #000;
+    border-top-color: transparent;
     border-right-color: transparent;
     position: relative;
     top: -2.5px;
 }
 
 #menu-direita{
-    border-bottom-color: #000;
+    border-bottom-color: transparent;
     border-left-color: transparent;
     position: absolute;
     bottom: -2.5px;
@@ -107,34 +116,10 @@ main{
     z-index: 99;
 }
 
-#titulo-esquerda, #titulo-direita{
-    display: inline-block;
-    white-space: nowrap;
-    margin: 0;
-    position: relative;
-    z-index: 3;
-    transition: opacity .2s;
-    overflow: hidden;
-}
-
 .texto{
     padding: 6px 0;
     background: #fff;
     display: inline-block;
-}
-
-#titulo-esquerda .texto,
-#titulo-direita .texto{
-    text-indent: 10px;
-    background: #fff;
-}
-
-#titulo-esquerda .texto{
-    text-align: right;
-}
-
-#titulo-direita .texto{
-    padding-right: 5px;
 }
 
 .complemento{
@@ -239,9 +224,9 @@ main{
 
 .content-texto{
     width: 100%;
-    height: calc(100% - 20pt - 20px - 60pt);
+    height: calc(100% - 20pt - 20px - 60pt - 0.5em);
     overflow-y: auto;
-    margin: 0;
+    margin: 0.5em 0 0 0;
     text-indent: 10pt;
 }
 
@@ -265,16 +250,14 @@ main{
 #sobre, #localizacao{
     width: 50%;
     float:left;
-}
-
-#sobre{
-    width: calc(50% - 20px);
-    padding: 0 10px 0 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 #localizacao{
-    height: 100%;
-    overflow: hidden;
+    width: calc(50% - 20px);
+    height: calc(100% - 20px);
+    padding: 0 10px 0 0;
 }
 
 #localizacao #googlemaps{
@@ -283,4 +266,16 @@ main{
     margin-left: 0;
     position: relative;
     top: 1.5em;
+}
+
+#colaboradoras{
+    text-align: center;
+}
+
+#colaboradoras img{
+    margin: 15px .5% 10px 0;
+    width: 20%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
 }

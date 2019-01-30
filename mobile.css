@@ -15,12 +15,13 @@
         font-size: 14pt;
     }
 
+
     #localizacao, #sobre{
         width: 100%;
         float:none;
     }
 
-    #sobre {
+    #localizacao {
         padding: 0;
         margin-bottom: 1em;
     }

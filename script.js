@@ -1,14 +1,51 @@
-var menuEsquerda, menuDireita, tituloEsquerda, tituloDireita;
+var menuEsquerda, menuDireita, mtss, mt, ss, mtImage, ssImage;
 var pageWidth, pageHeight, headerHeight, pontoMedioX, pontoMedioY;
 
 window.addEventListener("load", function(){
     
+    mtss = document.getElementById("mtss");
+    mt = document.getElementById("mt");
+    ss = document.getElementById("ss");
+    mtImage = document.getElementById("mt-img");
+    ssImage = document.getElementById("ss-img");
+
     menuEsquerda    = document.getElementById("menu-esquerda");
     menuDireita     = document.getElementById("menu-direita");
-    tituloEsquerda  = document.getElementById("titulo-esquerda");
-    tituloDireita   = document.getElementById("titulo-direita");
     contentEsquerda = document.getElementById("content-esquerda");    
     contentDireita  = document.getElementById("content-direita");
+
+    var togglesPalestra = document.getElementsByClassName("timeline__toggle");
+    var contents = document.getElementsByClassName("timeline__content");
+
+    for (var t in togglesPalestra){
+        var toggle = togglesPalestra[t];
+
+        if(typeof(toggle) == "object"){
+            toggle.addEventListener("click", function(e){
+                var parent = e.target.parentNode;
+
+                if(parent.getAttribute("class").indexOf("show") <= 0){
+                    parent.setAttribute("class", "timeline__content show")
+                    
+                    for (var c in contents){
+                        if(typeof(contents[c]) == "object" && contents[c] != parent){
+                            contents[c].setAttribute("class", "timeline__content")
+                        }
+                    }
+
+                } else {
+                    parent.setAttribute("class", "timeline__content")
+                }
+            })
+        }
+    }
+
+    var n = [];
+    while(n.length < 2){
+        var random = Math.floor(Math.random()*16) + 1;
+        if(n.indexOf(random) > -1) continue;
+        n.push(random);
+    }
 
     headerHeight = 53;
     sizes();
@@ -18,7 +55,6 @@ window.addEventListener("resize", sizes);
 
 function sizes(){
     menuEsquerda.style.transition   = "";
-    tituloEsquerda.style.transition = "";
     menuDireita.style.transition    = "";
 
     pageWidth = window.innerWidth + 1;
@@ -41,59 +77,51 @@ function sizes(){
 
     var b1 = pageHeight;
     var l1 = pageWidth;
-    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
-    var b3 = tituloDireita.children[1].offsetHeight;
-    var l2 = (b2 * l1)/b1;
-    var l3 = (b3 * l1)/b1;
-
+    
     pontoMedioX = pageWidth/2;
     pontoMedioY = pageHeight/2;
 
-    tituloEsquerda.style.height = b3 + "px";
-    tituloEsquerda.style.paddingRight = l3 + "px";
-    tituloEsquerda.style.top  = - (pontoMedioY + b2 - 2) + "px";
-    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
-    
-    tituloEsquerda.children[1].style.borderBottomWidth = b3 + "px";
-    tituloEsquerda.children[1].style.borderLeftWidth = l3 + "px";
-    
-    tituloDireita.style.height = b3 + "px";
-    tituloDireita.style.paddingLeft = l3 + "px"; 
-    tituloDireita.style.top  = + (pontoMedioY) + "px";
-    tituloDireita.style.left = - (pontoMedioX + l3 + 3)  + "px";
-
-    tituloDireita.children[0].style.borderBottomWidth = b3 + "px";
-    tituloDireita.children[0].style.borderLeftWidth = l3 + "px";
-
     menuEsquerda.style.transition   = ".6s all";
-    tituloEsquerda.style.transition = ".6s all";
     menuDireita.style.transition    = ".5s all";
+
+    // teorema de pitagoras: (d * d) = (l1 * l1) + (b2 * b2)
+    // (d)iagonal, (l)argura, (b) altura
+    var d = Math.sqrt((l1 * l1) + (b1 * b1));
+   
+    var cos = b1 / d;
+    var angle = 90 - (Math.acos(cos) * 180 / Math.PI);
+    
+    mt.style.width = d + "px";
+    ss.style.width = d + "px";
+
+    mt.style.transform = "rotate(-" + angle + "deg)";
+    ss.style.transform = "rotate(-" + angle + "deg)";
+
+
+    mtImage.style.transform = "rotate(" + angle + "deg)";
+    ssImage.style.transform = "rotate(" + angle + "deg)";
+
+
+    
+    
 }
 
 function showSection(show, hide){
     
-    menu.style.background = "transparent"; 
-    
-    document.getElementById("content-" + show).style.visibility = "visible";
-    document.getElementById("content-" + hide).style.visibility = "hidden";
-    
-    var b1 = 0;
-    var l1 = pageWidth*5;
-    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
-    var l2 = (b2 * l1)/b1;
-    
-    menuEsquerda.style.borderTopWidth = b1 + "px"; 
-    tituloEsquerda.style.top  = "0px";
-    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
-    
-    menuDireita.style.borderLeftWidth = l1 + "px";
-    
-    menuEsquerda.style.opacity  = 0;
-    menuDireita.style.opacity   = 0
-    tituloEsquerda.style.opacity = 0;
-    tituloDireita.style.opacity  = 0;
-    
-    setTimeout(function(){ menu.style.visibility = "hidden" }, 600);
+        menu.style.background = "transparent"; 
+        
+        document.getElementById("content-" + show).style.visibility = "visible";
+        document.getElementById("content-" + hide).style.visibility = "hidden";
+        
+        menuEsquerda.style.opacity  = 0;
+        menuDireita.style.opacity   = 0
+        
+        mt.setAttribute("class", "wrap hide")
+        ss.setAttribute("class", "wrap hide")
+        
+        setTimeout(function(){ 
+            menu.style.visibility = "hidden" 
+        }, 2000);
 }
 
 function hideSection(){
@@ -102,17 +130,14 @@ function hideSection(){
     
     var b1 = pageHeight;
     var l1 = pageWidth;
-    var b2 = tituloEsquerda.children[0].offsetHeight / 1.5;
-    var l2 = (b2 * l1)/b1;
     
     menuEsquerda.style.borderTopWidth = b1 + "px";
-    tituloEsquerda.style.top  = - (pontoMedioY + b2 - 2) + "px";
-    tituloEsquerda.style.left = pontoMedioX - tituloEsquerda.offsetWidth + l2 + "px";
-    
-    menuDireita.style.borderLeftWidth = pageWidth + "px";
+    menuDireita.style.borderLeftWidth = l1 + "px";
 
     menuEsquerda.style.opacity  = 1;
     menuDireita.style.opacity   = 1;
-    tituloEsquerda.style.opacity = 1;
-    tituloDireita.style.opacity  = 1;
+
+    mt.setAttribute("class", "wrap")
+    ss.setAttribute("class", "wrap")
+
 }
