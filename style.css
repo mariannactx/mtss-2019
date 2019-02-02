@@ -75,8 +75,8 @@ main{
 .menu-item{
     position: relative;
     display: inline;
-    margin: 10px;
-    top: 10px;
+    /* margin: 10px; */
+    top: 30px;
     padding: 10px;
     font-family: medium-content-sans-serif-font;
 }
@@ -165,6 +165,8 @@ main{
     background: #fff;    
     position: relative;
     z-index: 3;
+    font-family: medium-content-sans-serif-font;
+    letter-spacing: 2pt;
 }
 
 #titulo-centro h2 i{

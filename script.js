@@ -49,6 +49,23 @@ window.addEventListener("load", function(){
 
     headerHeight = 53;
     sizes();
+
+    setInterval(function(){
+        mt.setAttribute("class", "wrap hide")
+        ss.setAttribute("class", "wrap hide")
+
+        setTimeout(function(){
+            if(mtImage.src.indexOf("10") > 0){
+                mtImage.src = "img/cobertura/2018-9-removebg-crop.png";
+            } else {
+                mtImage.src = "img/cobertura/2018-10-removebg-crop.png";
+            }
+
+            mt.setAttribute("class", "wrap")
+            ss.setAttribute("class", "wrap")
+        }, 500);
+    }, 3000);
+    
 });
 
 window.addEventListener("resize", sizes);
@@ -97,13 +114,8 @@ function sizes(){
     mt.style.transform = "rotate(-" + angle + "deg)";
     ss.style.transform = "rotate(-" + angle + "deg)";
 
-
     mtImage.style.transform = "rotate(" + angle + "deg)";
-    ssImage.style.transform = "rotate(" + angle + "deg)";
-
-
-    
-    
+    ssImage.style.transform = "rotate(" + (angle + 4) + "deg)";
 }
 
 function showSection(show, hide){

@@ -18,8 +18,11 @@
     <body>
         <?php include("data.php"); ?>
         <header id="header">
+            <div class="menu-item"> <img src="img/Logo.png" /> </div>
             <div class="menu-item" onclick="showSection('esquerda', 'direita')">SOBRE</div>
             <div class="menu-item" onclick="showSection('direita', 'esquerda')">PROGRAMAÇÃO</div>
+            <div class="menu-item" onclick="showSection('direita', 'esquerda')">APOIO</div>
+            <div class="menu-item" onclick="showSection('direita', 'esquerda')">PARCEIRAS</div>
         </header>
         <main>
             <div id="menu">
@@ -42,9 +45,6 @@
                 </div>
 
             </div>
-            <div id="titulo-centro">
-                <h2>INSCREVA-SE <i class="fas fa-clipboard-list"></i></h2>
-            </div>
             <div id="content">
                 <div id="content-esquerda">
                     <div class="content">
@@ -56,6 +56,10 @@
                     <?php include("programacao.php") ?>
                     </div>
                 </div>
+            </div>
+
+            <div id="titulo-centro">
+                <h2>INSCREVA-SE <i class="fas fa-clipboard-list"></i></h2>
             </div>
         </main>
     </body>

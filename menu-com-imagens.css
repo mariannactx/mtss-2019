@@ -43,7 +43,17 @@ html, body, .wrap, .crop {
 }
 
 .wrap .crop img {
-    width: 200px;
+    width: 145px;
     position: absolute;
     transition: all .7s;
+}
+
+.menu-item:first-child{
+    float: left;
+    top: -12px;
+}
+
+.menu-item:first-child,
+.menu-item:first-child img{
+    height: 54px;
 }
