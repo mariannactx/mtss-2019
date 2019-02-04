@@ -4,13 +4,12 @@
 }
 
 #timeline {
-    width: 90%;
+    width: 95%;
     max-width: 1170px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
     padding: 2em 0;
-    
     font-family: "Droid Serif", serif;
     color: #7f8c97;
 }
@@ -21,7 +20,7 @@
     width: 4px;
     height: 100%;
     top: 0;
-    left: 43px;
+    left: 48px;
     background: #d7e4ed;
     position: absolute;
 }
@@ -29,6 +28,7 @@
 .timeline__block {
     position: relative;
     margin: 2em 0;
+    left: 5px;
     min-height: 93px;
 }
 

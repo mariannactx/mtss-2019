@@ -1,4 +1,28 @@
 {
+    "bg": [
+        {
+            "background": "url(img/cobertura/2018-6-flip.png)",
+            "background-position": "center",
+            "background-size": "cover"
+        },
+        {
+            "background": "url(img/cobertura/2018-17.jpg)",
+            "background-position": "center",
+            "background-size": "cover"
+        },
+        {
+            "background": "url(img/cobertura/2018-4.jpg)",
+            "background-position": "center bottom",
+            "background-size": "150%"
+        }
+    ],
+    "menu": { 
+        "sobre": "Sobre", 
+        "como-chegar": "Como chegar",
+        "programacao": "Programação",
+        "parceiras": "Parceiras",
+        "apoio": "Apoio"
+    },
     "programacao": [
         {
             "palestrante": "Fulaninha da Silva",

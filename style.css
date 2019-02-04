@@ -17,6 +17,7 @@
 html, body{
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 body{
@@ -42,156 +43,199 @@ h4{
 
 header{
     width: 100%;
-    height: 40pt;
     background: #fff;
     text-align: center;
-    transition: height .5s;
     border-bottom: 1px solid #000;
-}
-
-header #logo{
-    max-width: 8%;
-    margin: 3pt auto;
-    display: inline-block;
     position: relative;
-    z-index: 4;
-    transition: all .5s;
+    z-index: 99;
 }
 
 main{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    position: relative;    
+}
+
+main #bg-image{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: calc(100% + 20px);
+    left: -15px;
+    top: -10px;
+    position: absolute;
+    background-repeat: no-repeat;
 }
 
 #menu{
     width: 100%;
-    overflow: hidden;
     position: relative;
     z-index: 3;
     background: #fff;
-    transition: 2s background;
+    color: #000;
+    visibility: visible;
+    padding: 0;
 }
 
 .menu-item{
     position: relative;
-    display: inline;
-    /* margin: 10px; */
-    top: 30px;
+    display: inline-block;
+    margin: 0 10px;
     padding: 10px;
     font-family: medium-content-sans-serif-font;
+    text-transform: uppercase;
+    font-size: 8pt;
 }
 
-#menu-esquerda, #menu-direita{
-    width: 0;
-    height: 0;
-    border-style: solid;
-
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
+.menu-item span{
+    font-size: 12pt;
 }
 
-#menu-esquerda{
-    border-top-color: transparent;
-    border-right-color: transparent;
+#inicial {
+    width: fit-content;
+    margin: 0 auto;
+    height: 84%;
     position: relative;
-    top: -2.5px;
+    display: flex;
+    align-items: center;
 }
 
-#menu-direita{
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    position: absolute;
-    bottom: -2.5px;
+#inicial #logo {
+    height: 50%;
+    width: min-content;
+    margin: 0;
+    float: left;
+    position: relative;
 }
 
-#menu-esquerda div,
-#menu-direita div{
+#inicial #logo:before {
+    content: "oi";
+    color: transparent;
+    width: 60%;
+    height: 60%;
     position: absolute;
+    background: #fff;
+    top: 20%;
+    left: 20%;
+}
+
+#inicial #logo img {
+    width: unset;
+    height: 100%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+#inicial #logo #logo-out{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#inicial #slogan{
+    float:left;
+    white-space: pre;
+}
+
+.slogan{
+    display: inline-block;
+    padding: 5pt;
+    background: #fff;
+    color: #000;
+    margin: 0 0 5pt 15pt;
+    font-family: 'Staatliches', cursive;
+    position: relative;
+    font-size: 18pt
+}
+#inicial #slogan span#local,
+#inicial #slogan span#data{
+    font-size: 14pt;
+}
+
+#inicial #slogan span#local{
+    margin-top: 10pt;
+}
+
+.pink { color: #d4145a; }
+.green { color: #339999; }
+
+footer{
+    width: calc(100% - 28pt);
+    padding: 0 14pt;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div, 
+footer > form{
+    width: max-content;
+    padding: 5px 13px;
+    letter-spacing: 2pt;
+}
+
+footer form *{
+    background: transparent;
+    padding: 3pt 11pt;
+    border: none;
+    display: inline-block;
+}
+
+footer * {
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+}
+
+footer form button {
+    margin: 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+footer .fab.fa-instagram{
+    top: 1px;
+    position: relative;
+}
+
+footer form {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+footer form input {
+    border-bottom: 1px solid;
+    margin: 0 5pt 0 0;
+    padding: 0;
+    font-family: courier;
+    min-width: 300px;
+}
+
+footer > div a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+span.close {
+    font-size: 20pt;
+    top: 24pt;
+    right: 22pt;
+    position: absolute;
+}
+
+#content{
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
-}
-
-.texto{
-    padding: 6px 0;
-    background: #fff;
-    display: inline-block;
-}
-
-.complemento{
-    width: 0;
-    height: 0;
-    content: "oi";
-    color: transparent;
-    display: block;
-    border-style: solid;
-    border-width: 0;
-    border-color: transparent;
-    top: 0;
+    background-color: #fff;
     position: absolute;
-    z-index: 1;
-}
-
-#titulo-esquerda .complemento{
-    border-left-color: #fff;
-    right: 0;
-}
-
-#titulo-direita .complemento{
-    border-bottom-color: #fff;
-    left: 0;
-}
-
-#titulo-centro{
-    width: 100%;
-    padding: 0;
-    bottom: 0;
-    position: absolute;
-    background: transparent;
-    color: #000;
-    text-align: center;
-    border-top: 1px solid #000;
-}
-
-#titulo-centro h2{
-    width: auto;
-    display: inline-block;
-    margin: 0;
-    padding: 5px 20px;
-    background: #fff;    
-    position: relative;
-    z-index: 3;
-    font-family: medium-content-sans-serif-font;
-    letter-spacing: 2pt;
-}
-
-#titulo-centro h2 i{
-    position: relative;
-    width: 9pt;
-}
-
-#titulo-esquerda,
-#titulo-direita,
-#titulo-centro,
-.content-titulo span i
-{
-    cursor: pointer;
-}
-
-.content-titulo span i:before{
-    font-size: 20pt;
-}
-
-#content{
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 40pt);
-    top: 40pt;
-    left: 0;
     overflow: hidden;
 }
 
@@ -212,12 +256,8 @@ main{
 
 .content-titulo{
     height: 20pt;
-    padding: 25pt 0 10px 0; 
+    padding: 25pt 35pt 5pt 0;
     margin:0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between
 }
 
 .content-titulo span i{
@@ -226,7 +266,7 @@ main{
 
 .content-texto{
     width: 100%;
-    height: calc(100% - 20pt - 20px - 60pt - 0.5em);
+    height: calc(100% - 25pt - 20pt - 5pt - 1em);
     overflow-y: auto;
     margin: 0.5em 0 0 0;
     text-indent: 10pt;
@@ -249,21 +289,8 @@ main{
     letter-spacing: -.004em;
 }
 
-#sobre, #localizacao{
-    width: 50%;
-    float:left;
-    height: 100%;
-    overflow: hidden;
-}
-
-#localizacao{
-    width: calc(50% - 20px);
-    height: calc(100% - 20px);
-    padding: 0 10px 0 0;
-}
-
-#localizacao #googlemaps{
-    width: 100%;
+#googlemaps{
+    width: calc(100% - 3em);
     height: calc(100% - 3em);
     margin-left: 0;
     position: relative;

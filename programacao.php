@@ -1,7 +1,5 @@
-<?php $programacao = $json["programacao"]; ?>
 <h3 class="content-titulo">
     <span>Programação</span>
-    <span><i class="far fa-window-close" onclick="hideSection()"></i></span>
 </h3>
 <div class="content-texto">
 <div id="timeline">
