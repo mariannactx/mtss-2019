@@ -49,7 +49,7 @@
                     <img id="logo-out" src="img/logo-round-out.png" />
                 </div>
                 <div id="slogan">
-<span class="slogan"> Encontro de mulheres</span>
+<span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
 <span id="local" class="slogan pink"> NA CONDUCTOR </span>
 <span id="data" class="slogan green"> EM MARÇO </span>
