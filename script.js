@@ -25,13 +25,6 @@ function load(){
         }
     }
 
-    var n = [];
-    while(n.length < 2){
-        var random = Math.floor(Math.random()*16) + 1;
-        if(n.indexOf(random) > -1) continue;
-        n.push(random);
-    }
-
     byId("menu-link").addEventListener("click", function(e) {
         e.preventDefault();
         
@@ -71,6 +64,20 @@ function sizes(){
 
 function show(section){    
     
+    byId("hamburger").setAttribute("class", "");
+    byId("menu").setAttribute("class", "");
+
+    if(byId("menu-item-" + section).getAttribute("class") == "menu-item open"){
+        hide(section);
+        return true;
+    }
+
+    ['sobre', 'como-chegar', 'programacao', 'parceiras', 'apoio'].forEach(function(secao){
+        if(secao != section){
+            hide(secao);
+        }
+    });
+
     inicial.style.opacity = 0;
 
     byId("content").setAttribute("class", "open");
@@ -80,7 +87,7 @@ function show(section){
     
     setTimeout(function(){ 
         inicial.style.visibility = "hidden" 
-    }, 1000);
+    }, 200);
 }
 
 function hide(section){
@@ -88,13 +95,14 @@ function hide(section){
     inicial.style.visibility = "visible"; 
     inicial.style.opacity = 1;
 
+    byId("menu-item-" + section).setAttribute("class", "menu-item");    
     byId("menu-animation-" + section).setAttribute("class", "menu-animation");
     byId("content").setAttribute("class", "");
     
     setTimeout(function(){ 
         byId("content-" + section).style.visibility = "hidden"; 
         byId("content").style.visibility = "hidden"; 
-    }, 1000);
+    }, 200);
    
 }
 

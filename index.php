@@ -8,6 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="fonts.css" />
         <link rel="stylesheet" href="timeline.css">
         <link rel="stylesheet" href="animacao.css" />
 
@@ -19,7 +20,6 @@
         <?php include("data.php"); ?>
         <header id="header">
             <div id="hamburger">
-                <span class="menu-circle"></span>
                 <a href="#" id="menu-link">
                     <span class="menu-icon">
                     <span class="menu-line menu-line-1"></span>
@@ -29,10 +29,14 @@
                 </a>
             </div>
             <ul id="menu" class="">
-                <?php foreach($menu as $id => $titulo): ?>
+                <?php foreach($menu as $id => $item): ?>
                     <div id="menu-animation-<?= $id ?>" class="menu-animation" ></div>
-                    <li id="menu-item-<?= $id ?>" class="menu-item" onclick="show('<?= $id ?>')">
-                        [<span> <?= $titulo ?> </span>]
+                    <li 
+                        id="menu-item-<?= $id ?>"
+                        class="menu-item <?= $item['em-breve'] ? 'em-breve' : '' ?>"
+                        <?= $item['em-breve'] ? '' : "onclick=\"show('$id')\"" ?> 
+                    >
+                        [<span> <?= $item['titulo'] ?> </span>]
                     </li>
                 <?php endforeach; ?>
             </ul>

@@ -22,19 +22,18 @@
 }
 
 #content > div{
-    background: #fff;s
+    background: #fff;
 }
 
-#header #menu li{
-    z-index: 2;
+#header #menu {
+    z-index: 999;
 }
 
 #header #menu li span {
     transition: padding .5s;
-    z-index: 2;
 }
 
-#header #menu li:hover span{
+#header #menu li:not(.em-breve):hover span{
     padding: 0 5px;
 }
 
@@ -46,11 +45,9 @@
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 1000;
     transition: transform 0.3s ease-in-out;
     background-color: #fff;
     border-radius: 100%;
-    z-index: 1;
 }
 
 #header #menu .menu-animation.open{
@@ -61,7 +58,6 @@
     transition: opacity 0.2s ease-in-out;
     opacity: 0;
     visibility: hidden;
-    z-index: 1001;
 }
 
 #content.open {

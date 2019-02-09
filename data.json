@@ -17,11 +17,26 @@
         }
     ],
     "menu": { 
-        "sobre": "Sobre", 
-        "como-chegar": "Como chegar",
-        "programacao": "Programação",
-        "parceiras": "Parceiras",
-        "apoio": "Apoio"
+        "sobre": {
+            "em-breve": false,
+            "titulo":"Sobre" 
+        },
+        "como-chegar": {
+            "em-breve": false,
+            "titulo":"Como chegar"
+        },
+        "programacao": {
+            "em-breve": true,
+            "titulo":"Programação"
+        },
+        "parceiras": {
+            "em-breve": true,
+            "titulo":"Parceiras"
+        },
+        "apoio": {
+            "em-breve": true,
+            "titulo":"Apoio"
+        }
     },
     "programacao": [
         {
