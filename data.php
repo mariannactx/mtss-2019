@@ -5,7 +5,7 @@
     $programacao = $json["programacao"];
     $menu = $json["menu"];
 
-    $bg = !empty($_GET["bg"]) ? $_GET["bg"] : 0;
+    $bg = !empty($_GET["bg"]) ? $_GET["bg"] : 2;
     
     $bgs = $json["bg"];
     

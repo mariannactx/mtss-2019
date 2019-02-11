@@ -53,7 +53,7 @@
 <span class="slogan"> de TI da Paraíba </span>
 <span id="local" class="slogan pink"> NA CONDUCTOR </span>
 <span id="data" class="slogan green"> EM MARÇO </span>
-                </div>
+</div>
             </div>
             <div id="content" class="">
                 <?php foreach($menu as $id => $titulo): ?>
@@ -66,12 +66,7 @@
                 <?php endforeach; ?>
             </div>
             <footer id="footer">
-                <form>
-                    <input type="text" name="email" placeholder="email" />
-                    <button type="submit" class="green"> QUERO NOVIDADES 
-                        SEM SPAM! </button>
-                </form> 
-                
+                <?php include("newsletter.php") ?>
                 <div>
                     <a href="http://instagram.com/mulhertechsimsr">
                         <span> 

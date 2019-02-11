@@ -26,15 +26,15 @@
             "titulo":"Como chegar"
         },
         "programacao": {
-            "em-breve": true,
+            "em-breve": false,
             "titulo":"Programação"
         },
         "parceiras": {
-            "em-breve": true,
+            "em-breve": false,
             "titulo":"Parceiras"
         },
         "apoio": {
-            "em-breve": true,
+            "em-breve": false,
             "titulo":"Apoio"
         }
     },

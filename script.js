@@ -74,7 +74,10 @@ function show(section){
 
     ['sobre', 'como-chegar', 'programacao', 'parceiras', 'apoio'].forEach(function(secao){
         if(secao != section){
-            hide(secao);
+            console.log(byId("menu-item-" + secao).getAttribute("class"));
+            if(byId("menu-item-" + secao).getAttribute("class") != "menu-item em-breve"){
+                hide(secao);
+            }
         }
     });
 
