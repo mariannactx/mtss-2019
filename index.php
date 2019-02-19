@@ -51,18 +51,20 @@
                 <div id="slogan">
 <span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
-<span id="local" class="slogan pink"> NA CONDUCTOR </span>
+<!-- <span id="local" class="slogan pink"> NA CONDUCTOR </span> -->
 <span id="data" class="slogan green"> EM MARÇO </span>
 </div>
             </div>
             <div id="content" class="">
-                <?php foreach($menu as $id => $titulo): ?>
+                <?php foreach($menu as $id => $item): ?>
+                    <?php if(!$item['em-breve']): ?>
                     <div id="content-<?= $id ?>">
                         <div class="content">
                            <span class="close"><i class="far fa-window-close" onclick="hide('<?= $id ?>')"></i></span>
                             <?php include("$id.php") ?>
                         </div>
                     </div>
+                    <?php endif ;?>
                 <?php endforeach; ?>
             </div>
             <footer id="footer">

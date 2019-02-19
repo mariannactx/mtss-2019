@@ -18,23 +18,23 @@
     ],
     "menu": { 
         "sobre": {
-            "em-breve": false,
+            "em-breve": true,
             "titulo":"Sobre" 
         },
         "como-chegar": {
-            "em-breve": false,
+            "em-breve": true,
             "titulo":"Como chegar"
         },
         "programacao": {
-            "em-breve": false,
+            "em-breve": true,
             "titulo":"Programação"
         },
         "parceiras": {
-            "em-breve": false,
+            "em-breve": true,
             "titulo":"Parceiras"
         },
         "apoio": {
-            "em-breve": false,
+            "em-breve": true,
             "titulo":"Apoio"
         }
     },
