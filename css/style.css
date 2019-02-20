@@ -7,6 +7,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
+    
 }
 
 h2, h3, h4{
@@ -27,10 +28,12 @@ h4{
 
 header{
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
     text-align: center;
     border-bottom: 1px solid #000;
     position: relative;
+    background: url(../img/bg.png);
+    background-size: 50%;
 }
 
 main{
@@ -53,7 +56,7 @@ main #bg-image{
 #menu{
     width: 100%;
     position: relative;
-    background: #fff;
+    /* background: #fff; */
     color: #000;
     visibility: visible;
     padding: 0;
@@ -69,6 +72,7 @@ main #bg-image{
     font-size: 8pt;
     cursor: pointer;
     z-index: 999;
+    /* background: #fff; */
 }
 
 .menu-item span{
@@ -171,6 +175,8 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background: url(../img/bg.png);
+    background-size: 50%;
 }
 
 footer > div, 
@@ -196,6 +202,7 @@ footer form button {
     margin: 0;
     text-align: center;
     font-size: 12pt;
+    background: #fff;
 }
 
 footer .fab.fa-instagram{
@@ -214,11 +221,13 @@ footer form input {
     padding: 0;
     font-family: courier;
     min-width: 300px;
+    background: #fff;
 }
 
 footer > div a {
     text-decoration: none;
     color: #fff;
+    background: #fff;
 } 
 
 span.close {
