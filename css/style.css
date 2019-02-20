@@ -1,12 +1,6 @@
 html, body{
     margin: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
+    padding: 0;
 }
 
 h2, h3, h4{
@@ -25,116 +19,15 @@ h4{
     margin:0;
 }
 
-header{
-    width: 100%;
-    background: #fff;
-    text-align: center;
-    border-bottom: 1px solid #000;
-    position: relative;
-}
-
-main{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;    
-}
-
-main #bg-image{
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    width: calc(100% + 20px);
-    left: -15px;
-    top: -10px;
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-#menu{
-    width: 100%;
-    position: relative;
-    background: #fff;
-    color: #000;
-    visibility: visible;
-    padding: 0;
-}
-
-.menu-item{
-    position: relative;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px;
+.medium-sans-serif{
     font-family: medium-content-sans-serif-font;
-    text-transform: uppercase;
     font-size: 8pt;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.menu-item span{
-    font-size: 12pt;
 }
 
 .em-breve:after {
-    width: 100%;
-    content: "- em breve -";
-    display: inline-block;
-    position: absolute;
-    top: 12pt;
-    left: 0;
-    text-align: center;
-    white-space: nowrap;
-    color: #d4145a;
-    font-size: 14pt;
-    text-transform: lowercase;
     font-family: Playlist;
 }
 
-#inicial {
-    width: fit-content;
-    margin: 0 auto;
-    height: 84%;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-#inicial #logo {
-    height: 50%;
-    width: min-content;
-    margin: 0;
-    float: left;
-    position: relative;
-}
-
-#inicial #logo:before {
-    content: "oi";
-    color: transparent;
-    width: 60%;
-    height: 60%;
-    position: absolute;
-    background: #fff;
-    top: 20%;
-    left: 20%;
-}
-
-#inicial #logo img {
-    width: unset;
-    height: 100%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-#inicial #logo #logo-out{
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-#inicial #slogan{
-    float:left;
-    white-space: pre;
-}
 
 .slogan{
     display: inline-block;
@@ -146,118 +39,9 @@ main #bg-image{
     position: relative;
     font-size: 18pt
 }
-#inicial #slogan span#local,
-#inicial #slogan span#data{
-    font-size: 14pt;
-}
-
-#inicial #slogan span#local{
-    margin-top: 10pt;
-}
 
 .pink { color: #d4145a; }
 .green { color: #339999; }
-
-footer{
-    width: calc(100% - 28pt);
-    padding: 0 14pt;
-    bottom: 0;
-    position: absolute;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    border-top: 1px solid #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-footer > div, 
-footer > form{
-    width: max-content;
-    padding: 5px 13px;
-    letter-spacing: 2pt;
-}
-
-footer form *{
-    background: transparent;
-    padding: 3pt 11pt;
-    border: none;
-    display: inline-block;
-}
-
-footer * {
-    font-family: 'Staatliches', cursive;
-    font-weight: normal;
-}
-
-footer form button {
-    margin: 0;
-    text-align: center;
-    font-size: 12pt;
-}
-
-footer .fab.fa-instagram{
-    top: 1px;
-    position: relative;
-}
-
-footer form {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-}
-
-footer form input {
-    border-bottom: 1px solid;
-    margin: 0 5pt 0 0;
-    padding: 0;
-    font-family: courier;
-    min-width: 300px;
-}
-
-footer > div a {
-    text-decoration: none;
-    color: #fff;
-} 
-
-span.close {
-    font-size: 20pt;
-    top: 24pt;
-    right: 22pt;
-    position: absolute;
-}
-
-#content{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    position: absolute;
-    overflow: hidden;
-}
-
-#content > div{
-    width: 100%;
-    height: 100%;
-    left:0;
-    top:0;
-    position: absolute;
-    visibility: hidden;
-}
-
-.content{
-    height: 100%;
-    padding: 0 30px;
-    position: relative;
-}
-
-.content-titulo{
-    height: 20pt;
-    padding: 25pt 35pt 5pt 0;
-    margin:0;
-}
 
 .content-titulo span i{
     letter-spacing: 0;
@@ -286,31 +70,4 @@ span.close {
     font-size: 18px;
     line-height: 1.58;
     letter-spacing: -.004em;
-}
-
-#googlemaps{
-    width: calc(100% - 3em);
-    height: calc(100% - 3em);
-    margin-left: 0;
-    position: relative;
-    top: 1.5em;
-}
-
-#colaboradoras{
-    text-align: center;
-}
-
-#colaboradoras img{
-    margin: 15px .5% 10px 0;
-    width: 20%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-}
-
-.content-sobre{
-    width: calc(50% - 40px);
-    height: calc(100% - 40px);
-    padding: 20px;
-    float: left;
 }
