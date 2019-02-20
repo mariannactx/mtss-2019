@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="fonts.css" />
-        <link rel="stylesheet" href="timeline.css">
-        <link rel="stylesheet" href="animacao.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/timeline.css">
+        <link rel="stylesheet" href="css/animacao.css" />
 
-        <link rel="stylesheet" href="mobile.css" media="(max-width: 500px)" />
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 500px)" />
         
         <script src="script.js"></script>
     </head>

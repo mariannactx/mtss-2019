@@ -31,9 +31,6 @@ footer {
     justify-content: space-between;
 }
 
-footer form {
-}
-
 footer form input{
     margin: 0;
     min-width: unset;
