@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/colorsfonts.css" />
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/animacao.css" />
 
@@ -29,20 +29,19 @@
                 </a>
             </div>
             <ul id="menu" class="">
-                <?php foreach($menu as $id => $item): ?>
-                    <div id="menu-animation-<?= $id ?>" class="menu-animation" ></div>
+                <?php foreach($menu as $id => $titulo): ?>
                     <li 
                         id="menu-item-<?= $id ?>"
-                        class="menu-item <?= $item['em-breve'] ? 'em-breve' : '' ?>"
-                        <?= $item['em-breve'] ? '' : "onclick=\"show('$id')\"" ?> 
+                        class="menu-item"
+                        onclick="show('<?= $id ?>')" 
                     >
-                        [<span> <?= $item['titulo'] ?> </span>]
+                        [<span> <?= $titulo ?> </span>]
                     </li>
                 <?php endforeach; ?>
             </ul>
         </header>
         <main>
-            <div id="bg-image" style="<?=$bg_style?>"></div>
+            <div id="bg-image"></div>
             <div id="inicial">
                 <div id="logo">
                     <img id="logo-in" src="img/logo-round-in.png" />
@@ -51,20 +50,18 @@
                 <div id="slogan">
 <span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
-<!-- <span id="local" class="slogan pink"> NA CONDUCTOR </span> -->
-<span id="data" class="slogan green"> EM MARÇO </span>
+<!-- <span id="local" class="slogan text-pink"> NA CONDUCTOR </span> -->
+<span id="data" class="slogan text-dark-green"> EM MARÇO </span>
 </div>
             </div>
             <div id="content" class="">
-                <?php foreach($menu as $id => $item): ?>
-                    <?php if(!$item['em-breve']): ?>
+                <?php foreach($menu as $id => $titulo): ?>
                     <div id="content-<?= $id ?>">
                         <div class="content">
                            <span class="close"><i class="far fa-window-close" onclick="hide('<?= $id ?>')"></i></span>
                             <?php include("$id.php") ?>
                         </div>
                     </div>
-                    <?php endif ;?>
                 <?php endforeach; ?>
             </div>
             <footer id="footer">
@@ -72,8 +69,8 @@
                 <div>
                     <a href="http://instagram.com/mulhertechsimsr">
                         <span> 
-                            <i class="fab fa-instagram pink"></i> 
-                            <span class="green">@mulher</span><span class="green">techsimsr</span> 
+                            <i class="fab fa-instagram text-pink"></i> 
+                            <span class="text-dark-green">@mulher</span><span class="text-dark-green">techsimsr</span> 
                         </span>
                     </a>
                 </div> 

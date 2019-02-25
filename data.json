@@ -17,31 +17,25 @@
         }
     ],
     "menu": { 
-        "sobre": {
-            "em-breve": true,
-            "titulo":"Sobre" 
-        },
-        "como-chegar": {
-            "em-breve": true,
-            "titulo":"Como chegar"
-        },
-        "programacao": {
-            "em-breve": true,
-            "titulo":"Programação"
-        },
-        "parceiras": {
-            "em-breve": true,
-            "titulo":"Parceiras"
-        },
-        "apoio": {
-            "em-breve": true,
-            "titulo":"Apoio"
-        }
+        "sobre": "Sobre",
+        "programacao": "Programação"
     },
     "programacao": [
         {
-            "palestrante": "Fulaninha da Silva",
-            "foto": "avatar-1.svg",
+            "titulo": "Credenciamento",
+            "icone": "fa-utensils",
+            "hora": "8:00 - 9:00",
+            "descricao": ""
+        },
+        {
+            "titulo": "Abertura",
+            "icone": "fa-utensils",
+            "hora": "9:00 - 9:30",
+            "descricao": ""
+        },
+        {
+            "palestrante": "Dandara Sousa",
+            "foto": "dandara.jpeg",
             "contato": {
                 "twitter": "",
                 "facebook": "",
@@ -49,13 +43,13 @@
                 "instagram": "",
                 "linkedin": ""
             },
-            "titulo": "Título da palestra",
-            "hora": "9h",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut."
+            "titulo": "Visualização de Dados Feministas",
+            "hora": "9:30 - 10:30",
+            "descricao": "Em breve"
         },
         {
-            "palestrante": "Fulaninha da Silva",
-            "foto": "avatar-2.svg",
+            "palestrante": "Sáskya Gurgel",
+            "foto": "saskya.jpeg",
             "contato": {
                 "twitter": "",
                 "facebook": "",
@@ -63,26 +57,24 @@
                 "instagram": "",
                 "linkedin": ""
             },
-            "titulo": "Título da palestra",
-            "hora": "10h",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut."
+            "titulo": "Relato de experiência",
+            "hora": "10:30 - 11:30",
+            "descricao": "Em breve"
         },
         {
-            "palestrante": "Fulaninha da Silva",
-            "foto": "avatar-3.svg",
-            "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
-                },
-            "titulo": "Título da palestra",
-            "hora": "11h",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut."
+            "titulo": "Sorteio de brindes",
+            "icone": "fa-utensils",
+            "hora": "11:30 - 12:00",
+            "descricao": ""
         },
         {
-            "palestrante": "",
+            "titulo": "Almoço",
+            "icone": "fa-utensils",
+            "hora": "12:00 - 13:00",
+            "descricao": ""
+        },
+        {
+            "palestrante": "Mesa redonda",
             "foto": "",
             "contato": {
                 "twitter": "",
@@ -90,46 +82,16 @@
                 "github": "",
                 "instagram": "",
                 "linkedin": ""
-            },
-            "titulo": "Almoço",
+                },
+            "titulo": "Mulheres inspiradoras ao nosso redor",
+            "hora": "15:00 - 16:30",
+            "descricao": "Nessa mesa redonda, conversaremos sobre o dia-a-dia da mulher que trabalha com tecnologia."
+        },
+        {
+            "titulo": "Encerramento",
             "icone": "fa-utensils",
-            "hora": "12h",
+            "hora": "16:30 - 17:00",
             "descricao": ""
-        },
-        {
-            "palestrante": "Fulaninha da Silva",
-            "foto": "avatar-1.svg",
-            "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
-                },
-            "titulo": "Título da palestra",
-            "hora": "13h",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut."
-        },
-        {
-            "palestrante": "Fulaninha da Silva",
-            "foto": "avatar-2.svg",
-            "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
-                },
-            "titulo": "Título da palestra",
-            "hora": "14h",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut."
         }
-    ],
-    "localizacao": "",
-    "sobre": "",
-    "edicoes": [
-        {"2016": ""},
-        {"2017": ""},
-        {"2018": ""}
     ]
 }

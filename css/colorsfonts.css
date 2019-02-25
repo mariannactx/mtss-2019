@@ -1,8 +1,29 @@
+.text-white       { color: #fff; }
+.text-gray        { color: #534741; }
+.text-pink        { color: #d4145a; }
+.text-orange      { color: #F15A24; }
+.text-light-green { color: #D9E021; }
+.text-dark-green  { color: #339999; }
+
+.bg-white       { background-color: #fff; }
+.bg-gray        { background-color: #534741; }
+.bg-pink        { background-color: #d4145a; }
+.bg-orange      { background-color: #F15A24; }
+.bg-light-green { background-color: #D9E021; }
+.bg-dark-green  { background-color: #339999; }
+
+@font-face {
+    font-family: 'Staatliches'; 
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/staatliches/v2/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2')
+}
+
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 @font-face {
-    font-family: 'Playlist';
-    src: url('Playlist Script.otf');
+    font-family: 'Quentin';
+    src: url('../font/Quentin.ttf');
     font-weight: normal;
     font-style: normal;
 }

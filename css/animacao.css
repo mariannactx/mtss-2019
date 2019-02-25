@@ -37,23 +37,6 @@
     padding: 0 5px;
 }
 
-#header #menu .menu-animation{
-    content: "oi";
-    color: transparent;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
-    background-color: #fff;
-    border-radius: 100%;
-}
-
-#header #menu .menu-animation.open{
-    transform: scale(60);
-}
-
 #content {
     transition: opacity 0.2s ease-in-out;
     opacity: 0;

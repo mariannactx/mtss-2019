@@ -73,11 +73,9 @@ function show(section){
     }
 
     ['sobre', 'como-chegar', 'programacao', 'parceiras', 'apoio'].forEach(function(secao){
-        if(secao != section){
-            console.log(byId("menu-item-" + secao).getAttribute("class"));
-            if(byId("menu-item-" + secao).getAttribute("class") != "menu-item em-breve"){
-                hide(secao);
-            }
+        var menuItem = byId("menu-item-" + secao);
+        if(menuItem && secao != section){
+            hide(secao);
         }
     });
 
@@ -98,8 +96,7 @@ function hide(section){
     inicial.style.visibility = "visible"; 
     inicial.style.opacity = 1;
 
-    byId("menu-item-" + section).setAttribute("class", "menu-item");    
-    byId("menu-animation-" + section).setAttribute("class", "menu-animation");
+    byId("menu-item-" + section).setAttribute("class", "menu-item");
     byId("content").setAttribute("class", "");
     
     setTimeout(function(){ 
