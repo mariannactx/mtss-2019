@@ -29,7 +29,7 @@
             "titulo": "Em breve",
             "icone": "fa-calendar",
             "hora": "9:30 - 10:30",
-            "descricao": "Em breve"
+            "descricao": ""
         },
         {
             "palestrante": "Sáskya Gurgel",
@@ -84,7 +84,7 @@
             "titulo": "Em breve",
             "icone": "fa-calendar",
             "hora": "14:20 - 15:00",
-            "descricao": "Em breve"
+            "descricao": ""
         },
         {
             "palestrante": "Mesa redonda",
