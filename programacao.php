@@ -13,13 +13,13 @@
             <?php endif ?>
             </div>
             <div class="timeline__content">
-                <h2><?=$atividade['titulo']?></h2>
+                <h2 class="no-indent"><?=$atividade['titulo']?></h2>
                 <?php if(!empty($atividade['palestrante'])): ?>
-                    <h3><?=$atividade['palestrante']?></h3>
+                    <h3 class="no-indent"><?=$atividade['palestrante']?></h3>
                 <?php endif;?>
-                <span class="timeline__date"><?=$atividade['hora']?></span>
+                <span class="timeline__date no-indent"><?=$atividade['hora']?></span>
                 <?php if(!empty($atividade['descricao'])): ?>
-                <p><?=$atividade['descricao']?></p>
+                <p class="no-indent"><?=$atividade['descricao']?></p>
                 <i class="timeline__toggle fas fa-arrow-down"></i>
                 <?php endif; ?>
             </div>

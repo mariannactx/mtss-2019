@@ -12,6 +12,9 @@
 .bg-light-green { background-color: #D9E021; }
 .bg-dark-green  { background-color: #339999; }
 
+.no-indent{ text-indent: 0; }
+.center{ text-align: center; }
+
 @font-face {
     font-family: 'Staatliches'; 
     font-style: normal;

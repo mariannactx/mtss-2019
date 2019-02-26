@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/animacao.css" />
 
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 500px)" />
+        <!-- <link rel="stylesheet" href="css/menu-mobile.css" media="(max-width: 500px)" /> -->
         
         <script src="script.js"></script>
     </head>
@@ -22,17 +23,18 @@
             <div id="hamburger">
                 <a href="#" id="menu-link">
                     <span class="menu-icon">
-                    <span class="menu-line menu-line-1"></span>
-                    <span class="menu-line menu-line-2"></span>
-                    <span class="menu-line menu-line-3"></span>
+                        <span class="menu-line menu-line-1"></span>
+                        <span class="menu-line menu-line-2"></span>
+                        <span class="menu-line menu-line-3"></span>
                     </span>
+                    <span class="text-dark-green">MENU</span>
                 </a>
             </div>
             <ul id="menu" class="">
                 <?php foreach($menu as $id => $titulo): ?>
                     <li 
                         id="menu-item-<?= $id ?>"
-                        class="menu-item"
+                        class="menu-item text-dark-green"
                         onclick="show('<?= $id ?>')" 
                     >
                         [<span> <?= $titulo ?> </span>]

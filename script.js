@@ -67,7 +67,7 @@ function show(section){
     byId("hamburger").setAttribute("class", "");
     byId("menu").setAttribute("class", "");
 
-    if(byId("menu-item-" + section).getAttribute("class") == "menu-item open"){
+    if(byId("menu-item-" + section).getAttribute("class") == "menu-item text-dark-green open"){
         hide(section);
         return true;
     }
@@ -83,7 +83,7 @@ function show(section){
 
     byId("content").setAttribute("class", "open");
     
-    byId("menu-item-" + section).setAttribute("class", "menu-item open");
+    byId("menu-item-" + section).setAttribute("class", "menu-item text-dark-green open");
     byId("content-" + section).style.visibility = "visible";
     
     setTimeout(function(){ 
@@ -96,7 +96,7 @@ function hide(section){
     inicial.style.visibility = "visible"; 
     inicial.style.opacity = 1;
 
-    byId("menu-item-" + section).setAttribute("class", "menu-item");
+    byId("menu-item-" + section).setAttribute("class", "menu-item text-dark-green");
     byId("content").setAttribute("class", "");
     
     setTimeout(function(){ 

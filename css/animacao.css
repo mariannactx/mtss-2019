@@ -29,12 +29,16 @@
     z-index: 999;
 }
 
+
 #header #menu li span {
-    transition: padding .5s;
+    color: #000;
+    transition: all .5s;
 }
 
-#header #menu li:not(.em-breve):hover span{
+#header #menu li:hover span,
+#header #menu li.open span{
     padding: 0 5px;
+    color:inherit;
 }
 
 #content {

@@ -23,19 +23,19 @@
     "programacao": [
         {
             "titulo": "Credenciamento",
-            "icone": "fa-utensils",
+            "icone": "fa-address-card",
             "hora": "8:00 - 9:00",
             "descricao": ""
         },
         {
             "titulo": "Abertura",
-            "icone": "fa-utensils",
+            "foto": "logo-symbol-in.png",
             "hora": "9:00 - 9:30",
             "descricao": ""
         },
         {
-            "palestrante": "Dandara Sousa",
-            "foto": "dandara.jpeg",
+            "palestrante": "",
+            "foto": "",
             "contato": {
                 "twitter": "",
                 "facebook": "",
@@ -43,7 +43,8 @@
                 "instagram": "",
                 "linkedin": ""
             },
-            "titulo": "Visualização de Dados Feministas",
+            "titulo": "Em breve",
+            "icone": "fa-calendar",
             "hora": "9:30 - 10:30",
             "descricao": "Em breve"
         },
@@ -63,15 +64,44 @@
         },
         {
             "titulo": "Sorteio de brindes",
-            "icone": "fa-utensils",
+            "icone": "fa-gifts",
             "hora": "11:30 - 12:00",
             "descricao": ""
         },
         {
             "titulo": "Almoço",
             "icone": "fa-utensils",
-            "hora": "12:00 - 13:00",
+            "hora": "12:00 - 13:30",
             "descricao": ""
+        },
+        {
+            "palestrante": "Dandara Sousa",
+            "foto": "dandara.jpeg",
+            "contato": {
+                "twitter": "",
+                "facebook": "",
+                "github": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            "titulo": "Visualização de Dados Feministas",
+            "hora": "13:30 - 14:20",
+            "descricao": "Em breve"
+        },
+        {
+            "palestrante": "",
+            "foto": "",
+            "contato": {
+                "twitter": "",
+                "facebook": "",
+                "github": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            "titulo": "Em breve",
+            "icone": "fa-calendar",
+            "hora": "14:20 - 15:00",
+            "descricao": "Em breve"
         },
         {
             "palestrante": "Mesa redonda",
@@ -85,11 +115,12 @@
                 },
             "titulo": "Mulheres inspiradoras ao nosso redor",
             "hora": "15:00 - 16:30",
+            "icone": "fa-comments",
             "descricao": "Nessa mesa redonda, conversaremos sobre o dia-a-dia da mulher que trabalha com tecnologia."
         },
         {
             "titulo": "Encerramento",
-            "icone": "fa-utensils",
+            "icone": "fa-glass-cheers",
             "hora": "16:30 - 17:00",
             "descricao": ""
         }
