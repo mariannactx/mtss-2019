@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/bg-small.png);
+    background-size: 25%;
+}
+
+main {
+    width: calc(100% - 100px);
+    height: calc(100% - 150px);
+    background: #fff;
+    margin: 150px 50px 0 50px;
+
+}
+
+main h1 {
+    font-family: 'Quentin';
+    font-size: 40px;
+    font-weight: normal;
+}
+
+main p{
+    font-family: 'Montserrat'
+}
+
+main p:last-of-type{
+    margin-top: 45px;
+}
+
+.btn{
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn .fas,
+.btn .fab{
+    top: 2px;
+    position: relative;
+}
