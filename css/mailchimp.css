@@ -5,22 +5,30 @@ html, body{
 }
 
 body {
-    background-image: url(img/bg-small.png);
+    background-image: url(../img/bg-small.png);
     background-size: 25%;
+    height: calc(100% - 150px);
 }
 
 main {
     width: calc(100% - 100px);
-    height: calc(100% - 150px);
+    height: 100%;
     background: #fff;
     margin: 150px 50px 0 50px;
+}
 
+main #logo-round{
+    width: 120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: block;
 }
 
 main h1 {
     font-family: 'Quentin';
     font-size: 40px;
     font-weight: normal;
+    margin-top: 0;
 }
 
 main p{
