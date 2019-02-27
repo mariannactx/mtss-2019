@@ -53,7 +53,7 @@
 <span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
 <!-- <span id="local" class="slogan text-pink"> NA CONDUCTOR </span> -->
-<span id="data" class="slogan text-dark-green"> EM MARÇO </span>
+<span id="data" class="slogan text-dark-green"> 30 DE MARÇO </span>
 </div>
             </div>
             <div id="content" class="">
