@@ -1,3 +1,7 @@
+window.addEventListener("load", function(){
+    byId("bg-image").style.opacity = 1;
+})
+
 function load(){
     var togglesPalestra = document.getElementsByClassName("timeline__toggle");
     var contents = document.getElementsByClassName("timeline__content");
@@ -56,8 +60,6 @@ function sizes(){
     inicial.style.height = "";
     inicial.style.height = (pageHeight + 2) + "px";
     
-    var bg = byId("bg-image");
-    bg.style.opacity = 1;
     bg.style.height = "";
     bg.style.width = (pageWidth + 30) + "px";
     bg.style.height = (pageHeight + 30) + "px";
