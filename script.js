@@ -60,6 +60,7 @@ function sizes(){
     inicial.style.height = "";
     inicial.style.height = (pageHeight + 2) + "px";
     
+    var bg = byId("bg-image");
     bg.style.height = "";
     bg.style.width = (pageWidth + 30) + "px";
     bg.style.height = (pageHeight + 30) + "px";
