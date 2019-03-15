@@ -17,39 +17,43 @@
             "descricao": ""
         },
         {
-            "palestrante": "",
-            "foto": "",
+            "palestrante": "Dandara Souza",
+            "foto": "dandara.png",
             "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
+                "twitter": "dandaramcsousa",
+                "github": "dandaramcsousa",
+                "linkedin": "dandaramcsousa"
             },
-            "titulo": "Em breve",
+            "titulo": "O feminismo na Ciência de Dados",
             "icone": "fa-calendar",
-            "hora": "9:30 - 10:30",
-            "descricao": ""
+            "hora": "9:30 - 10:20",
+            "descricao": "Uma discussão sobre como o pensamento feminista influencia na coleta e visualização de dados."
         },
         {
-            "palestrante": "Sáskya Gurgel",
-            "foto": "saskya.jpeg",
+            "palestrante": "Thays Silva",
+            "foto": "thays.jpg",
             "contato": {
                 "twitter": "",
-                "facebook": "",
                 "github": "",
-                "instagram": "",
                 "linkedin": ""
             },
-            "titulo": "Relato de experiência",
-            "hora": "10:30 - 11:30",
+            "titulo": "Python no Titanic",
+            "hora": "10:20 - 11:10",
             "descricao": "Em breve"
         },
         {
-            "titulo": "Sorteio de brindes",
-            "icone": "fa-gifts",
-            "hora": "11:30 - 12:00",
-            "descricao": ""
+            "palestrante": "Sáskya Gurgel",
+            "foto": "saskya.jpg",
+            "contato": {
+                "twitter": "",
+                "facebook": "",
+                "github": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            "titulo": "Mulher multithread: minha trajetória em TI",
+            "hora": "11:10 - 12:00",
+            "descricao": "Em breve"
         },
         {
             "titulo": "Almoço",
@@ -58,8 +62,8 @@
             "descricao": ""
         },
         {
-            "palestrante": "Dandara Sousa",
-            "foto": "dandara.jpeg",
+            "palestrante": "Maria Clara Magalhães",
+            "foto": "mariaclaramagalhaes.jpeg",
             "contato": {
                 "twitter": "",
                 "facebook": "",
@@ -67,24 +71,9 @@
                 "instagram": "",
                 "linkedin": ""
             },
-            "titulo": "Visualização de Dados Feministas",
-            "hora": "13:30 - 14:20",
+            "titulo": "Acelerando as mulheres inovadoras que transformam a sociedade",
+            "hora": "13:30 - 14:30",
             "descricao": "Em breve"
-        },
-        {
-            "palestrante": "",
-            "foto": "",
-            "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            "titulo": "Em breve",
-            "icone": "fa-calendar",
-            "hora": "14:20 - 15:00",
-            "descricao": ""
         },
         {
             "palestrante": "Mesa redonda",
@@ -97,14 +86,14 @@
                 "linkedin": ""
                 },
             "titulo": "Mulheres inspiradoras ao nosso redor",
-            "hora": "15:00 - 16:30",
+            "hora": "14:30 - 17:00",
             "icone": "fa-comments",
-            "descricao": "Nessa mesa redonda, conversaremos sobre o dia-a-dia da mulher que trabalha com tecnologia."
+            "descricao": "Em breve"
         },
         {
             "titulo": "Encerramento",
             "icone": "fa-glass-cheers",
-            "hora": "16:30 - 17:00",
+            "hora": "17:00 - 17:30",
             "descricao": ""
         }
     ]

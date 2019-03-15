@@ -134,6 +134,11 @@
     margin: 0;
 }
 
+#timeline h3 a{
+    text-decoration: none;
+    color: #7f8c97;
+}
+
 .timeline__content p {
     margin: 0;
     line-height: 1.6;
