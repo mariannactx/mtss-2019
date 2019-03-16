@@ -34,12 +34,12 @@
             "foto": "thays.jpg",
             "contato": {
                 "twitter": "",
-                "github": "",
-                "linkedin": ""
+                "github": "thaysfsil",
+                "linkedin": "thays-silva-97987641"
             },
             "titulo": "Python no Titanic",
             "hora": "10:20 - 11:10",
-            "descricao": "Em breve"
+            "descricao": "Machine learning para meros mortais: uma introdução básica de conceitos de aprendizagem de máquina com python"
         },
         {
             "palestrante": "Sáskya Gurgel",
