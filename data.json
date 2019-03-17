@@ -45,15 +45,13 @@
             "palestrante": "Sáskya Gurgel",
             "foto": "saskya.png",
             "contato": {
-                "twitter": "",
-                "facebook": "",
-                "github": "",
-                "instagram": "",
-                "linkedin": ""
+                "twitter": "saskyagurgel",
+                "github": "saskyagurgel",
+                "linkedin": "saskyagurgel"
             },
             "titulo": "Mulher multithread: minha trajetória em TI",
             "hora": "11:10 - 12:00",
-            "descricao": "Em breve"
+            "descricao": "Sáskya Gurgel tem formação em Análise e Desenvolvimentos pelo IFPB e Mestrado em Informática pelo PPGI-UFPB. Atua como Analista de Sistemas e Coordenadora da Unidade de Sistemas Comerciais na Caern, atua também como CTO na empresa Greencoders e no aplicativo Hamgo, e também é Arquiteta de Software e Full Stack Developer na empresa Lance Hotéis. Tem paixão em loop infinito por programação, ciências sociais e vôlei."
         },
         {
             "titulo": "Almoço",
