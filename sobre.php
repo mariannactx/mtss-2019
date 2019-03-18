@@ -9,6 +9,6 @@
 
         <p>Em 2019, a proposta é integrar mulheres estudantes ou atuantes no mercado de tecnologia da informação.</p>
         
-        <p class="no-indent center"><a href="/2018">2018</a> | <a href="/2017">2017</a> | <a href="/2016">2016</a></p>
+        <p class="no-indent center"><a target="_blank"  href="/2018">2018</a> | <a target="_blank"  href="/2017">2017</a> | <a target="_blank"  href="/2016">2016</a></p>
     </div>
 </div>

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/style.1.css" />
+        <link rel="stylesheet" href="css/style.2.css" />
         <link rel="stylesheet" href="css/colorsfonts.css" />
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/animacao.css" />
@@ -52,8 +52,8 @@
                 <div id="slogan">
 <span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
-<span id="local" class="slogan text-pink"> NO IESP </span>
-<span id="data" class="slogan text-dark-green"> 30 DE MARÇO </span>
+<span id="local" class="slogan text-dark-green"> 30 DE MARÇO </span>
+<span id="data" class="slogan"><a target="_blank" class="text-pink" href="https://www.google.com/maps/search/Lot.%20Parque%20Verde,%20Cabedelo%20,%20Loteamento%20Parque%20Verde,%20Cabedelo,%20PB,%2058033-455,%20BRASIL"><i class="fas fa-map-marker-alt"></i> IESP </a></span>
 </div>
             </div>
             <div id="content" class="">
@@ -69,7 +69,7 @@
             <footer id="footer">
                 <?php include("newsletter.php") ?>
                 <div>
-                    <a href="http://instagram.com/mulhertechsimsr">
+                    <a target="_blank" href="http://instagram.com/mulhertechsimsr">
                         <span> 
                             <i class="fab fa-instagram text-pink"></i> 
                             <span class="text-dark-green">@mulher</span><span class="text-dark-green">techsimsr</span> 

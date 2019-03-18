@@ -25,13 +25,13 @@
                     <h3 class="no-indent">
                         <?=$atividade['palestrante']?>
                         <?php if($twitter) : ?>
-                            <a href="http://www.twitter.com/<?=$twitter?>"<i class="fab fa-twitter"></i></a>
+                            <a target="_blank"  href="http://www.twitter.com/<?=$twitter?>"<i class="fab fa-twitter"></i></a>
                         <?php endif ?>
                         <?php if($github) : ?>
-                            <a href="http://www.github.com/<?=$github?>"<i class="fab fa-github"></i></a>
+                            <a target="_blank"  href="http://www.github.com/<?=$github?>"<i class="fab fa-github"></i></a>
                         <?php endif ?>
                         <?php if($linkedin) : ?>
-                            <a href="http://www.linkedin.com/in/<?=$linkedin?>"<i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="http://www.linkedin.com/in/<?=$linkedin?>"<i class="fab fa-linkedin"></i></a>
                         <?php endif ?>
                     </h3>
                 <?php endif;?>
