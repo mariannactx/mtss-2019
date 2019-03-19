@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/style.2.css" />
+        <link rel="stylesheet" href="css/style.3.css" />
         <link rel="stylesheet" href="css/colorsfonts.css" />
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/animacao.css" />
@@ -45,16 +45,16 @@
         <main>
             <div id="bg-image"></div>
             <div id="inicial">
-                <div id="logo">
-                    <img id="logo-in" src="img/logo-round-in.png" />
-                    <img id="logo-out" src="img/logo-round-out.png" />
-                </div>
-                <div id="slogan">
+                    <div id="logo">
+                        <img id="logo-in" src="img/logo-round-in.png" />
+                        <img id="logo-out" src="img/logo-round-out.png" />
+                    </div>
+                    <div id="slogan">
 <span class="slogan"> Encontro de mulheres </span>
 <span class="slogan"> de TI da Paraíba </span>
 <span id="local" class="slogan text-dark-green"> 30 DE MARÇO </span>
 <span id="data" class="slogan"><a target="_blank" class="text-pink" href="https://www.google.com/maps/search/Lot.%20Parque%20Verde,%20Cabedelo%20,%20Loteamento%20Parque%20Verde,%20Cabedelo,%20PB,%2058033-455,%20BRASIL"><i class="fas fa-map-marker-alt"></i> IESP </a></span>
-</div>
+                    </div>
             </div>
             <div id="content" class="">
                 <?php foreach($menu as $id => $titulo): ?>
@@ -67,6 +67,12 @@
                 <?php endforeach; ?>
             </div>
             <footer id="footer">
+
+            <div id="parceiras">
+                <span                class="text-orange">parceiras:</span>
+                <span id="iesp"      class="parceiras"></span>
+                <span id="conductor" class="parceiras"></span>
+            </div>
                 <?php include("newsletter.php") ?>
                 <div>
                     <a target="_blank" href="http://instagram.com/mulhertechsimsr">

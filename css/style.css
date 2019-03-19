@@ -63,6 +63,7 @@ main #bg-image{
 
 #menu{
     width: 100%;
+    height: 100%;
     position: relative;
     background: #fff;
     color: #000;
@@ -87,7 +88,6 @@ main #bg-image{
     font-size: 12pt;
     background: #fff;
 }
-
 
 #inicial {
     width: fit-content;
@@ -131,7 +131,6 @@ main #bg-image{
 }
 
 #inicial #slogan{
-    float:left;
     white-space: pre;
 }
 
@@ -157,6 +156,45 @@ text-decoration: none;
 
 #inicial #slogan span#local{
     margin-top: 10pt;
+}
+
+#parceiras {
+    position: absolute;
+    background-color: #fff;
+    width: 205px;
+    height: 30px;
+    bottom: 100%;
+    z-index: 2;
+    padding: 5pt;
+    left: calc(50% - 115px);
+    letter-spacing: 0pt;
+}
+
+#parceiras span:first-child{
+    line-height: 36px;
+    font-family: 'Staatliches', cursive;
+    display: inline-block;
+    float: left;
+}
+
+.parceiras{
+    width: 60px;
+    height: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    padding: 0;
+    margin: 0 0 0 5pt;
+}
+
+#conductor{
+    background-image: url(../img/conductor.png);
+}
+
+#iesp{
+    background-image: url(../img/iesp.png);
 }
 
 footer{
