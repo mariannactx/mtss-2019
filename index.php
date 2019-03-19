@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/style.4.css" />
+        <link rel="stylesheet" href="css/style.5.css" />
         <link rel="stylesheet" href="css/colorsfonts.css" />
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/animacao.css" />
@@ -31,6 +31,10 @@
                 </a>
             </div>
             <ul id="menu" class="">
+                <li class="menu-item">        
+                    <a class="text-pink" target="_blank" href="inscricoes"> [<span>INSCRIÇÕES</span>]
+                    </a>  
+                </li>
                 <?php foreach($menu as $id => $titulo): ?>
                     <li 
                         id="menu-item-<?= $id ?>"
