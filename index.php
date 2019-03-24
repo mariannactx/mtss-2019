@@ -71,12 +71,11 @@
                 <?php endforeach; ?>
             </div>
             <footer id="footer">
-                
-            <div id="parceiras">
-                <span                class="text-orange">parceiras:</span>
-                <span id="iesp"      class="parceiras"></span>
-                <span id="conductor" class="parceiras"></span>
-            </div>
+                <div id="parceiras">
+                    <span                class="text-orange">parceiras:</span>
+                    <span id="iesp"      class="parceiras"></span>
+                    <span id="conductor" class="parceiras"></span>
+                </div>
                 <?php include("newsletter.php") ?>
                 <div>
                     <a target="_blank" href="http://instagram.com/mulhertechsimsr">
