@@ -275,7 +275,7 @@ footer > div a {
 span.close {
     font-size: 20pt;
     top: 24pt;
-    right: 22pt;
+    right: 15pt;
     position: absolute;
 }
 
@@ -301,13 +301,13 @@ span.close {
 
 .content{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 15px;
     position: relative;
 }
 
 .content-titulo{
     height: 20pt;
-    padding: 25pt 35pt 5pt 0;
+    padding: 25pt 26pt 5pt 0;
     margin:0;
 }
 

@@ -3,8 +3,8 @@ window.addEventListener("load", function(){
 })
 
 function load(){
-    var togglesPalestra = document.getElementsByClassName("timeline__toggle");
-    var contents = document.getElementsByClassName("timeline__content");
+    var togglesPalestra = byClass("timeline__toggle");
+    var contents = byClass("timeline__content");
 
     for (var t in togglesPalestra){
         var toggle = togglesPalestra[t];
@@ -12,18 +12,20 @@ function load(){
         if(typeof(toggle) == "object"){
             toggle.addEventListener("click", function(e){
                 var parent = e.target.parentNode;
+                var classe = parent.getAttribute("class");
 
-                if(parent.getAttribute("class").indexOf("show") <= 0){
-                    parent.setAttribute("class", "timeline__content show")
+                if(classe.indexOf("show") <= 0){
+                    parent.setAttribute("class", classe + " show")
                     
                     for (var c in contents){
                         if(typeof(contents[c]) == "object" && contents[c] != parent){
-                            contents[c].setAttribute("class", "timeline__content")
+                            var contentsClass = contents[c].getAttribute("class");
+                            contents[c].setAttribute("class", contentsClass.replace(' show',''));
                         }
                     }
 
                 } else {
-                    parent.setAttribute("class", "timeline__content")
+                    parent.setAttribute("class", classe.replace(' show',''))
                 }
             })
         }
@@ -112,6 +114,10 @@ function hide(section){
 
 function byId(id){
     return document.getElementById(id);
+}
+
+function byClass(classe){
+    return document.getElementsByClassName(classe);
 }
 
 function getClass(id){
