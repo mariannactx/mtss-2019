@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/animacao.css" />
 
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 500px)" />
-        <!-- <link rel="stylesheet" href="css/menu-mobile.css" media="(max-width: 500px)" /> -->
+        <link rel="stylesheet" href="css/menu-mobile.css" media="(max-width: 500px)" />
         
         <script src="script.js"></script>
     </head>
@@ -71,7 +71,7 @@
                 <?php endforeach; ?>
             </div>
             <footer id="footer">
-
+                
             <div id="parceiras">
                 <span                class="text-orange">parceiras:</span>
                 <span id="iesp"      class="parceiras"></span>
