@@ -170,7 +170,7 @@ text-decoration: none;
     bottom: 100%;
     z-index: 2;
     padding: 5pt;
-    left: calc(50% - 102.5px);
+    left: calc(50% - ( 102.5px + 5pt ) );
     letter-spacing: 0pt;
 }
 
@@ -220,8 +220,12 @@ footer{
 footer > div, 
 footer > form{
     width: max-content;
-    padding: 5px 13px;
+    padding: 5px;
     letter-spacing: 2pt;
+}
+
+footer #instagram{
+    margin-left: 10px;
 }
 
 footer form *{
@@ -282,6 +286,7 @@ span.close {
     left: 0;
     background-color: #fff;
     position: absolute;
+    z-index: 3;
     overflow: hidden;
 }
 
