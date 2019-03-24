@@ -1,11 +1,11 @@
 #header #hamburger {
-        height: 6vh;
-        padding: 3vh 0 0 0;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        top: 0;
-    }
+    height: 6vh;
+    padding: 3vh 0 0 0;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
    
     #menu-link {
         display: inline-block;
@@ -69,6 +69,7 @@
         
     #header #menu {
         width: 100%;
+        height: fit-content;
         margin: 0;
         padding-bottom: 20px;
         text-align: center;
@@ -86,6 +87,7 @@
         align-items: center;
         
         position: absolute;
+        top: calc(100% - 10px);
     }
     
     #header #menu.open {
