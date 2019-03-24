@@ -286,6 +286,7 @@ span.close {
     left: 0;
     background-color: #fff;
     position: absolute;
+    z-index: 3;
     overflow: hidden;
 }
 
