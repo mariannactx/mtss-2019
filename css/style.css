@@ -172,6 +172,7 @@ text-decoration: none;
     padding: 5pt;
     left: calc(50% - ( 102.5px + 5pt ) );
     letter-spacing: 0pt;
+    border-bottom: 1px solid;
 }
 
 #parceiras span:first-child{
